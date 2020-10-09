@@ -1,4 +1,4 @@
-.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .new-twoFloor .new-twoFloor-con .little-area .content-box::after, .new-twoFloor .new-twoFloor-con .little-area .content-box ul li a::after {
+.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .new-twoFloor .new-twoFloor-con .little-area .content-box::after, .new-twoFloor .new-twoFloor-con .little-area .content-box ul li a::after, .J-floor3 .new-twoFloor-con .little-area .ms-title .code-wrapper111::after, .new-channel-ground-w .new-channel-ground .channel-wrap::after, .new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .title::after, .new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .content::after, .new-rec-tab-w .new-rec-tab .tab-content::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after {
   content: '';
   clear: both;
   display: block; }
@@ -148,6 +148,8 @@
   overflow: hidden;
   margin: 0 5px 0 0; }
 .ng-toolbar-left .address .ui-city-group {
+  background: #fff;
+  z-index: 99;
   position: absolute;
   border: black 1px solid;
   display: none; }
@@ -318,6 +320,80 @@
   height: 182px;
   border: 1px solid #ddd; }
 
+.index-header .index-header-container .ng-search, .ng-fix-bar .ng-search {
+  position: absolute;
+  height: 100px;
+  width: 600px;
+  top: 0;
+  left: 300px; }
+.index-header .index-header-container .ng-search .g-search, .ng-fix-bar .ng-search .g-search {
+  width: 540px;
+  position: relative;
+  margin: 30px 0 0;
+  float: right; }
+.index-header .index-header-container .ng-search .g-search > em, .ng-fix-bar .ng-search .g-search > em {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  font-size: 14px;
+  color: #ccc; }
+.index-header .index-header-container .ng-search .g-search .search-keyword-box, .ng-fix-bar .ng-search .g-search .search-keyword-box {
+  width: 390px;
+  border-radius: 12px 0 0 12px;
+  float: left;
+  padding: 0 0 0 28px;
+  border: 2px solid #ff8000;
+  border-right: none;
+  position: relative; }
+.index-header .index-header-container .ng-search .g-search .search-keyword-box .search-keyword, .ng-fix-bar .ng-search .g-search .search-keyword-box .search-keyword {
+  width: 380px;
+  padding: 9px 10px 9px 0;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 0;
+  border: none;
+  background: #FFF;
+  color: #BBB;
+  font-size: 12px; }
+.index-header .index-header-container .ng-search .g-search .search-btn, .ng-fix-bar .ng-search .g-search .search-btn {
+  font-size: 18px;
+  width: 120px;
+  background: #ff8000;
+  border-radius: 0 12px 12px 0;
+  height: 40px;
+  font-weight: 700;
+  text-indent: 2px;
+  color: #FFF;
+  border: 0;
+  cursor: pointer; }
+.index-header .index-header-container .ng-search .g-search .g-search-hotwords, .ng-fix-bar .ng-search .g-search .g-search-hotwords {
+  margin-top: 5px;
+  font-size: 12px; }
+.index-header .index-header-container .ng-search .g-search .g-search-hotwords > a, .ng-fix-bar .ng-search .g-search .g-search-hotwords > a {
+  color: #999999;
+  padding: 0 20px 0 10px;
+  margin: 3px 0 3px -11px;
+  height: 12px;
+  line-height: 12px;
+  border-left: 1px solid #ddd; }
+.index-header .index-header-container .ng-search .g-search .g-search-hotwords > a:hover, .ng-fix-bar .ng-search .g-search .g-search-hotwords > a:hover {
+  color: #FF6600; }
+.index-header .index-header-container .ng-search .g-search .g-ac-results, .ng-fix-bar .ng-search .g-search .g-ac-results {
+  position: absolute;
+  left: 0;
+  top: 41px;
+  width: 538px;
+  border: 1px solid #E4E4E4;
+  background: #FFF;
+  z-index: 7000;
+  overflow: hidden;
+  display: none; }
+
 .index-header {
   height: 110px; }
 .index-header .index-header-container {
@@ -329,91 +405,8 @@
 .index-header .index-header-container .ng-header-box > a img {
   width: 190px;
   height: 90px; }
-.index-header .index-header-container .ng-search {
-  position: absolute;
-  height: 100px;
-  width: 600px;
-  top: 0;
-  left: 300px; }
-.index-header .index-header-container .ng-search .g-search {
-  width: 540px;
-  position: relative;
-  margin: 30px 0 0;
-  float: right; }
-.index-header .index-header-container .ng-search .g-search > em {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 40px;
-  line-height: 40px;
-  text-align: right;
-  font-size: 14px;
-  color: #ccc; }
-.index-header .index-header-container .ng-search .g-search .search-keyword-box {
-  width: 390px;
-  border-radius: 12px 0 0 12px;
-  float: left;
-  padding: 0 0 0 28px;
-  border: 2px solid #ff8000;
-  border-right: none;
-  position: relative; }
-.index-header .index-header-container .ng-search .g-search .search-keyword-box .search-keyword {
-  width: 380px;
-  padding: 9px 10px 9px 0;
-  height: 18px;
-  line-height: 18px;
-  margin-top: 0;
-  border: none;
-  background: #FFF;
-  color: #BBB;
-  font-size: 12px; }
-.index-header .index-header-container .ng-search .g-search .search-btn {
-  font-size: 18px;
-  width: 120px;
-  background: #ff8000;
-  border-radius: 0 12px 12px 0;
-  height: 40px;
-  font-weight: 700;
-  text-indent: 2px;
-  color: #FFF;
-  border: 0;
-  cursor: pointer; }
-.index-header .index-header-container .ng-search .g-search .g-search-hotwords {
-  margin-top: 5px;
-  font-size: 12px; }
-.index-header .index-header-container .ng-search .g-search .g-search-hotwords > a {
-  color: #999999;
-  padding: 0 20px 0 10px;
-  margin: 3px 0 3px -11px;
-  height: 12px;
-  line-height: 12px;
-  border-left: 1px solid #ddd; }
-.index-header .index-header-container .ng-search .g-search .g-search-hotwords > a:hover {
-  color: #FF6600; }
-.index-header .index-header-container .ng-search .g-search .g-ac-results {
-  position: absolute;
-  left: 0;
-  top: 41px;
-  width: 538px;
-  border: 1px solid #E4E4E4;
-  background: #FFF;
-  z-index: 7000;
-  overflow: hidden;
-  display: none; }
 
-.ng-nav-bar {
-  position: relative;
-  width: 100%;
-  background: #fff;
-  overflow: visible;
-  height: 38px; }
-.ng-nav-bar .ng-nav-barV8 {
-  position: relative; }
-.ng-nav-bar .ng-nav-barV8 .index-sort {
-  position: relative; }
-.ng-nav-bar .ng-nav-barV8 .index-sort .index-all-hook {
+.ng-nav-bar .ng-nav-barV8 .index-sort .index-all-hook, .ng-fix-bar .index-sort .index-all-hook {
   width: 166px;
   position: absolute;
   display: block;
@@ -427,7 +420,7 @@
   border-radius: 12px 12px 0 0;
   text-decoration: none;
   padding-left: 34px; }
-.ng-nav-bar .ng-nav-barV8 .index-sort .index-all-hook > i {
+.ng-nav-bar .ng-nav-barV8 .index-sort .index-all-hook > i, .ng-fix-bar .index-sort .index-all-hook > i {
   position: absolute;
   display: block;
   width: 14px;
@@ -436,6 +429,17 @@
   left: 12px;
   background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401) -928px -26px;
   background-position: -928px 0; }
+
+.ng-nav-bar {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  overflow: visible;
+  height: 38px; }
+.ng-nav-bar .ng-nav-barV8 {
+  position: relative; }
+.ng-nav-bar .ng-nav-barV8 .index-sort {
+  position: relative; }
 .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box {
   position: absolute;
   top: 38px;
@@ -836,6 +840,36 @@
   width: 100%;
   height: 100%; }
 
+.new-twoFloor .new-twoFloor-con .little-area2 .ms-title .sub-title-pic, .J-floor2 .new-twoFloor-con .little-area .ms-title .sub-title-pic {
+  float: left;
+  height: 24px;
+  margin-top: 17px;
+  line-height: 24px;
+  padding: 0 5px;
+  color: red;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid red;
+  border-radius: 4px;
+  margin-left: 10px; }
+.new-twoFloor .new-twoFloor-con .little-area2 .ms-title .right-more, .J-floor2 .new-twoFloor-con .little-area .ms-title .right-more {
+  float: right;
+  color: #999;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 12px;
+  margin-top: 20px;
+  font-weight: normal; }
+.new-twoFloor .new-twoFloor-con .little-area2 .ms-title .right-more i, .J-floor2 .new-twoFloor-con .little-area .ms-title .right-more i {
+  width: 18px;
+  height: 18px;
+  float: right;
+  margin-left: 5px;
+  margin-top: 1px;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/more.png?v=2020091401);
+  background-size: 100% 100%; }
+
 .new-twoFloor {
   overflow: hidden;
   background-color: #f2f2f2; }
@@ -864,6 +898,8 @@
   width: 106px;
   height: 30px;
   border-radius: 8px; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .title-pic:hover {
+  color: #f60; }
 .new-twoFloor .new-twoFloor-con .little-area .ms-title .cc-infor {
   float: left;
   position: absolute;
@@ -911,6 +947,8 @@
 .new-twoFloor .new-twoFloor-con .little-area .ms-title .tab-list .t-list ul .cur {
   background: red;
   color: #fff; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box {
+  padding-bottom: 10px; }
 .new-twoFloor .new-twoFloor-con .little-area .content-box ul li {
   float: left;
   margin-left: 20px; }
@@ -965,17 +1003,517 @@
   margin-left: 10px;
   color: #999;
   font-size: 12px; }
-.new-twoFloor .new-twoFloor-con .little-area2 .ms-title .sub-title-pic {
-  float: left;
-  height: 24px;
-  margin-top: 17px;
-  line-height: 24px;
-  padding: 0 5px;
-  color: red;
-  font-size: 14px;
-  font-weight: normal;
-  border: 1px solid red;
-  border-radius: 4px;
+.new-twoFloor .new-twoFloor-con .little-area2 {
   margin-left: 10px; }
+.new-twoFloor .new-twoFloor-con .little-area2 .content-box {
+  padding-bottom: 10px; }
+.new-twoFloor .new-twoFloor-con .little-area2 .content-box ul li a .price-box {
+  height: 21px;
+  margin: 4px 4px 4px 0;
+  overflow: hidden; }
+.new-twoFloor .new-twoFloor-con .little-area2 .content-box ul li a .price-box .icon {
+  float: left;
+  width: 54px;
+  height: 18px;
+  margin: 2px 5px 0 0;
+  border-radius: 0; }
+.new-twoFloor .new-twoFloor-con .little-area2 .content-box ul li a .sales-num {
+  color: #999;
+  font-size: 12px; }
+
+.J-floor2 .new-twoFloor-con .little-area .ms-title a {
+  font-weight: bold; }
+.J-floor2 .new-twoFloor-con .little-area .content-box ul li .left-area {
+  position: relative;
+  display: block;
+  width: 170px;
+  height: 68px;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/quan3.png?v=2020091401); }
+.J-floor2 .new-twoFloor-con .little-area .content-box ul li .left-area a img {
+  margin: 10px 10px 0 10px; }
+.J-floor2 .new-twoFloor-con .little-area .content-box ul li .left-area .rule {
+  position: absolute;
+  height: 20px;
+  width: 140px;
+  color: #f30;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  top: 2px;
+  padding: 0 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+.J-floor2 .new-twoFloor-con .little-area .content-box ul li .left-area .desc {
+  position: absolute;
+  top: 22px;
+  height: 16px;
+  width: 140px;
+  color: #f30;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  padding-left: 15px;
+  overflow: hidden; }
+.J-floor2 .new-twoFloor-con .little-area .content-box ul li .left-area i {
+  display: block;
+  position: absolute;
+  left: 51px;
+  bottom: 4px;
+  height: 20px;
+  width: 68px;
+  color: #fff;
+  background: #f50;
+  font-size: 12px;
+  border: 1px solid #f50;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  z-index: 2; }
+.J-floor2 .new-twoFloor-con .little-area2 {
+  height: 298px; }
+.J-floor2 .new-twoFloor-con .little-area2 .content-box ul li .main-pic {
+  margin: 10px !important; }
+.J-floor2 .new-twoFloor-con .little-area2 .content-box ul li .name {
+  color: #333;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  width: 170px;
+  margin: 10px 0 2px 0; }
+.J-floor2 .new-twoFloor-con .little-area2 .content-box ul li .desc {
+  color: #f20;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 170px; }
+.J-floor2 .new-twoFloor-con .little-area2 .content-box ul li .desc span {
+  display: inline-block; }
+.J-floor2 .new-twoFloor-con .little-area2 .content-box ul li .desc span .icon {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 2px 3px 0 0; }
+
+.J-floor3 .new-twoFloor-con .little-area .ms-title {
+  overflow: visible; }
+.J-floor3 .new-twoFloor-con .little-area .ms-title .code-wrapper111 {
+  float: right;
+  height: 100%;
+  position: relative; }
+.J-floor3 .new-twoFloor-con .little-area .ms-title .code-wrapper111 .code111 {
+  display: none;
+  font-size: 12px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100px;
+  height: 110px;
+  background: #FFF;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  z-index: 199; }
+.J-floor3 .new-twoFloor-con .little-area .ms-title .code-wrapper111 .code111 img {
+  width: 80px;
+  height: 80px;
+  margin: 7px 10px 2px; }
+.J-floor3 .new-twoFloor-con .little-area .ms-title .code-wrapper111 .code111 span {
+  position: absolute;
+  width: 10px;
+  height: 8px;
+  top: -7px;
+  left: 76px;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401) -267px -210px; }
+.J-floor3 .new-twoFloor-con .little-area .ms-title .code-wrapper111:hover .code111 {
+  display: block; }
+.J-floor3 .new-twoFloor-con .little-area .content-box {
+  position: relative;
+  border-radius: 6px;
+  padding-bottom: 0; }
+.J-floor3 .new-twoFloor-con .little-area .content-box ul li {
+  margin-left: 20px;
+  margin-bottom: 20px; }
+.J-floor3 .new-twoFloor-con .little-area .content-box ul li a {
+  position: relative;
+  display: block; }
+.J-floor3 .new-twoFloor-con .little-area .content-box ul li a .pic1 {
+  width: 160px;
+  height: 100%;
+  border-radius: 6px;
+  margin: 0 5px; }
+.J-floor3 .new-twoFloor-con .little-area .content-box ul li a .icon {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 12px;
+  top: 12px;
+  border-radius: 3px;
+  background-image: linear-gradient(-90deg, #ff2062, #ff174b); }
+.J-floor3 .new-twoFloor-con .little-area .content-box ul li a .code {
+  display: none;
+  width: 160px;
+  height: 100%;
+  position: absolute;
+  margin-left: 5px;
+  top: 0;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.6); }
+.J-floor3 .new-twoFloor-con .little-area .content-box ul li a .code img {
+  margin: 30px 20px 8px;
+  width: 120px;
+  height: 120px; }
+.J-floor3 .new-twoFloor-con .little-area .content-box ul li a .code p {
+  font-size: 14px;
+  color: #fff;
+  text-align: center; }
+.J-floor3 .new-twoFloor-con .little-area .content-box ul li:hover .code {
+  display: block; }
+.J-floor3 .new-twoFloor-con .little-area2 {
+  height: 100%; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 170px;
+  height: 194px;
+  overflow: hidden;
+  border-radius: 6px; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li a {
+  display: block;
+  height: 100%; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li a .pic1 {
+  width: 150px;
+  height: 150px;
+  margin: 0 10px 10px 10px;
+  border-radius: 6px; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li a .price-box {
+  height: 21px;
+  margin: 10px 4px 6px 0;
+  overflow: hidden; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li a .price-box .price {
+  line-height: 21px;
+  color: #F30;
+  font-size: 20px; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li a .price-box .nums {
+  line-height: 16px;
+  color: #999;
+  font-size: 12px;
+  margin-left: 10px; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li a .code {
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li a .code img {
+  margin: 30px 25px 8px;
+  width: 120px;
+  height: 120px; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li a .code p {
+  text-align: center;
+  color: #fff;
+  font-size: 14px; }
+.J-floor3 .new-twoFloor-con .little-area2 ul li:hover .code {
+  display: block; }
+
+.new-channel-ground-w {
+  background-color: #f2f2f2; }
+.new-channel-ground-w .new-channel-ground .title-pic {
+  width: 100%;
+  height: 80px; }
+.new-channel-ground-w .new-channel-ground .channel-wrap .channel-box {
+  float: left;
+  background: #fff;
+  width: 390px;
+  height: 245px;
+  border-radius: 12px;
+  margin: 0 10px 10px 0; }
+.new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .title {
+  height: 60px; }
+.new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .title p {
+  float: left; }
+.new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .title .text {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 11px 12px 0 16px; }
+.new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .title .sub-text {
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px; }
+.new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .content a {
+  margin-left: 20px;
+  display: block;
+  width: 165px;
+  height: 165px;
+  float: left; }
+.new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .content a img {
+  width: 100%;
+  height: 100%; }
+
+.picone-floor-w {
+  background: #f2f2f2; }
+.picone-floor-w .picone-floor {
+  height: 146px;
+  padding-bottom: 10px;
+  overflow: hidden; }
+.picone-floor-w .picone-floor a img {
+  width: 100%;
+  height: 100%; }
+
+.new-rec-tab-w {
+  background: #f2f2f2; }
+.new-rec-tab-w .new-rec-tab img {
+  height: 80px; }
+.new-rec-tab-w .new-rec-tab .tab-nav {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  border-radius: 6px; }
+.new-rec-tab-w .new-rec-tab .tab-nav ul li {
+  width: 170px;
+  text-align: center;
+  padding-top: 6px;
+  float: left;
+  cursor: pointer; }
+.new-rec-tab-w .new-rec-tab .tab-nav ul li .text {
+  position: relative;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 2px;
+  height: 24px;
+  display: inline-block; }
+.new-rec-tab-w .new-rec-tab .tab-nav ul li .text span {
+  margin-left: 24px; }
+.new-rec-tab-w .new-rec-tab .tab-nav ul li .text img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  margin-right: 3px; }
+.new-rec-tab-w .new-rec-tab .tab-nav ul li .sub-text {
+  font-size: 14px;
+  height: 26px;
+  color: #999;
+  line-height: 26px;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 3px; }
+.new-rec-tab-w .new-rec-tab .tab-nav ul .cur {
+  color: #ff8000; }
+.new-rec-tab-w .new-rec-tab .tab-nav ul .cur .sub-text {
+  color: #fff;
+  background: #ff8000; }
+.new-rec-tab-w .new-rec-tab .tab-content {
+  padding-bottom: 10px; }
+.new-rec-tab-w .new-rec-tab .tab-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+.new-rec-tab-w .new-rec-tab .tab-content ul li {
+  position: relative;
+  background: #fff;
+  height: 330px;
+  border-radius: 8px;
+  margin-bottom: 10px; }
+.new-rec-tab-w .new-rec-tab .tab-content ul li a img {
+  width: 190px;
+  height: 190px;
+  margin: 20px 20px 10px; }
+.new-rec-tab-w .new-rec-tab .tab-content ul li a .title {
+  width: 190px;
+  height: 40px;
+  margin: 0 0 8px 20px;
+  overflow: hidden; }
+.new-rec-tab-w .new-rec-tab .tab-content ul li a .price-box {
+  position: absolute;
+  height: 28px;
+  bottom: 10px;
+  left: 20px; }
+.new-rec-tab-w .new-rec-tab .tab-content ul li a .price-box .price {
+  line-height: 28px;
+  color: #F30;
+  font-size: 20px;
+  font-weight: bold; }
+.new-rec-tab-w .new-rec-tab .tab-content ul li a .price-box .price i {
+  font-size: 14px; }
+.new-rec-tab-w .new-rec-tab .tab-content ul li a .price-box .refprice {
+  font-size: 13px;
+  line-height: 18px;
+  color: #999;
+  margin-left: 6px;
+  text-decoration: line-through; }
+.new-rec-tab-w .new-rec-tab .tab-content ul li a .cxIcon {
+  color: #ff8000;
+  margin-left: 20px; }
+.new-rec-tab-w .new-rec-tab .tab-content ul li a .cxIcon span {
+  font-size: 14px;
+  display: block;
+  float: left;
+  border: 1px solid #ff8000;
+  background: #fff;
+  border-radius: 3px;
+  padding: 0 2px; }
+
+.ng-footer .ng-ser-box {
+  background: #f5f5f5;
+  border-top: 1px solid #e7e7e7;
+  padding-bottom: 20px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise {
+  border-bottom: 1px solid #eaeaea;
+  padding: 12px 0; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl {
+  padding-bottom: 20px;
+  width: 238px;
+  float: left; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dt {
+  float: left; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dt a img {
+  width: 48px;
+  height: 48px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd {
+  float: left;
+  margin-left: 10px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd a {
+  font-size: 14px;
+  font-weight: bold; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd a:hover {
+  color: #F60; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd p {
+  margin-top: 3px;
+  color: #545454;
+  font-size: 12px;
+  margin-bottom: 6px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn {
+  float: left;
+  width: 90px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn p {
+  line-height: 40px;
+  font-weight: 700;
+  height: 35px;
+  font-size: 14px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn .con {
+  font-size: 12px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl {
+  width: 210px;
+  float: left; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dt {
+  line-height: 40px;
+  font-weight: 700;
+  height: 35px;
+  font-size: 14px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dd a {
+  font-size: 12px;
+  color: #545454; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dd a:hover {
+  color: #F60; }
+.ng-footer .ng-s-footer {
+  padding-top: 15px; }
+.ng-footer .ng-s-footer .ng-s-f-con p {
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+  height: 25px;
+  line-height: 25px; }
+.ng-footer .ng-s-footer .ng-s-f-con p span {
+  padding: 0 8px;
+  color: #888888; }
+.ng-footer .ng-s-footer .ng-s-f-con .sp-icon {
+  position: relative; }
+.ng-footer .ng-s-footer .ng-s-f-con .sp a {
+  color: #999; }
+.ng-footer .ng-s-footer .ng-s-f-con .sp i {
+  position: absolute;
+  left: 600px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: url(https://res.suning.cn/public/v3/css/images/gwab-icon.png) 0 0 no-repeat; }
+.ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic {
+  width: 358px;
+  margin: 0 auto; }
+.ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic img {
+  float: left;
+  margin-right: 8px; }
+
+.floatbar-w {
+  position: fixed;
+  top: 50%;
+  margin-top: -100px;
+  left: 50%;
+  margin-left: -680px; }
+.floatbar-w .floatbar {
+  position: relative;
+  width: 68px;
+  padding-top: 9px;
+  border: 1px solid #DDD;
+  background: #f8f8f8; }
+.floatbar-w .floatbar .float-bg {
+  position: absolute;
+  width: 42px;
+  height: 41px;
+  left: 13px;
+  top: -35px;
+  z-index: 1;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/float-bg.png?v=2020091401);
+  background-size: 100% 100%; }
+.floatbar-w .floatbar ul .active {
+  background: #ff9902; }
+.floatbar-w .floatbar ul .active a {
+  font-size: 12px;
+  color: #fff; }
+.floatbar-w .floatbar ul li {
+  width: 68px;
+  height: 28px;
+  border-bottom: 1px solid #e8e8e8;
+  text-align: center;
+  line-height: 28px; }
+.floatbar-w .floatbar ul li a {
+  font-size: 12px;
+  color: #333; }
+.floatbar-w .floatbar .to-top a {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px; }
+.floatbar-w .floatbar .to-top a i {
+  position: relative;
+  top: 0px;
+  left: 9px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 13px;
+  height: 13px;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401) -769px -90px; }
+.floatbar-w .floatbar .to-top a span {
+  color: #ff9902;
+  font-size: 12px;
+  margin-left: 6px; }
+
+.ng-fix-bar {
+  display: none;
+  position: fixed;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px;
+  left: 0;
+  top: 0;
+  height: 50px;
+  opacity: .95;
+  width: 100%;
+  z-index: 88888; }
+.ng-fix-bar .index-sort .index-all-hook {
+  top: 0;
+  margin-top: 5px;
+  left: 50%;
+  margin-left: -594px; }
+.ng-fix-bar .ng-search {
+  left: 50%;
+  margin-left: -295px; }
+.ng-fix-bar .ng-search .g-search {
+  margin-top: 5px; }
 
 /*# sourceMappingURL=index.css.map */
