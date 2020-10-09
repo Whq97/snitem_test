@@ -1,0 +1,981 @@
+.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .new-twoFloor .new-twoFloor-con .little-area .content-box::after, .new-twoFloor .new-twoFloor-con .little-area .content-box ul li a::after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.wrapper {
+  width: 1190px;
+  margin: 0 auto; }
+
+.ng-toolbar {
+  height: 35px;
+  background: #f5f5f5; }
+
+.ng-toolbar-con {
+  position: relative; }
+
+.ng-toolbar-left {
+  float: left;
+  position: absolute; }
+.ng-toolbar-left > div {
+  float: left; }
+.ng-toolbar-left > div > a {
+  font-size: 12px;
+  color: #666666;
+  width: 65px;
+  display: block;
+  padding: 0 10px;
+  line-height: 34px;
+  height: 34px;
+  position: relative;
+  z-index: 9999; }
+.ng-toolbar-left em {
+  font-size: 10px;
+  margin: 0 0 0 3px; }
+.ng-toolbar-left .wzdh > a {
+  display: block; }
+.ng-toolbar-left .wzdh .sn-site-close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer; }
+.ng-toolbar-left .wzdh .sn-site {
+  width: 988px;
+  left: 0;
+  position: absolute;
+  padding: 20px 0;
+  border: 1px solid #ddd;
+  top: 35px;
+  z-index: 9998;
+  display: none;
+  background-color: #fff; }
+.ng-toolbar-left .wzdh .sn-site .sn-site-list {
+  border-right: 1px solid #ccc;
+  padding-left: 20px;
+  width: 176px;
+  float: left; }
+.ng-toolbar-left .wzdh .sn-site .sn-site-list dd {
+  width: 100%; }
+.ng-toolbar-left .wzdh .sn-site .sn-site-list dd p {
+  display: inline-block;
+  width: 78px;
+  height: 25px;
+  line-height: 25px; }
+.ng-toolbar-left .wzdh .sn-site .sn-site-list dd p a {
+  font-size: 12px;
+  color: #666666; }
+.ng-toolbar-left .wzdh .sn-site .sn-site-list dd p a:hover {
+  color: orange; }
+.ng-toolbar-left .wzdh:hover .sn-site {
+  display: block; }
+.ng-toolbar-left .wzdh:hover > a {
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  background: white; }
+.ng-toolbar-left .sjrz .sj-list {
+  width: 162px;
+  padding-top: 5px;
+  position: absolute;
+  padding-bottom: 5px;
+  border: 1px solid #ddd;
+  background: #fff;
+  z-index: 9998;
+  top: 34px;
+  display: none; }
+.ng-toolbar-left .sjrz .sj-list p {
+  display: inline-block; }
+.ng-toolbar-left .sjrz .sj-list p a {
+  font-size: 12px;
+  color: #666666;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 7px;
+  width: 71px; }
+.ng-toolbar-left .sjrz .sj-list p a:hover {
+  color: orange; }
+.ng-toolbar-left .sjrz:hover > a {
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  background: white; }
+.ng-toolbar-left .sjrz:hover .sj-list {
+  display: block; }
+.ng-toolbar-left .sjrz:hover .shop {
+  color: orange; }
+.ng-toolbar-left .khfw .kh-list {
+  width: 162px;
+  padding-top: 5px;
+  position: absolute;
+  padding-bottom: 5px;
+  border: 1px solid #ddd;
+  background: #fff;
+  z-index: 9998;
+  top: 34px;
+  display: none;
+  left: 93px; }
+.ng-toolbar-left .khfw .kh-list p {
+  display: inline-block; }
+.ng-toolbar-left .khfw .kh-list p a {
+  font-size: 12px;
+  color: #666666;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 7px;
+  width: 71px; }
+.ng-toolbar-left .khfw .kh-list p a:hover {
+  color: orange; }
+.ng-toolbar-left .khfw:hover > a {
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  background: white; }
+.ng-toolbar-left .khfw:hover .kh-list {
+  display: block; }
+.ng-toolbar-left .address em {
+  font-size: 14px;
+  margin: 4px 6px 0;
+  color: orange; }
+.ng-toolbar-left .address span {
+  padding: 0 5px 0 0; }
+.ng-toolbar-left .address .sanjiao {
+  width: 0;
+  height: 0;
+  border-color: #bbb transparent transparent;
+  border-width: 6px 4px;
+  border-style: solid dashed dashed;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  margin: 0 5px 0 0; }
+.ng-toolbar-left .address .ui-city-group {
+  position: absolute;
+  border: black 1px solid;
+  display: none; }
+.ng-toolbar-left .address .ui-city-group .ui-city-close {
+  position: absolute;
+  right: 10px;
+  cursor: pointer; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content {
+  width: 370px;
+  background: #fff; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs {
+  padding-left: 14px;
+  overflow: hidden; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .provinceShow, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .citybShow {
+  float: left;
+  border: 1px solid #ededed;
+  background: #fff;
+  margin-right: 6px;
+  cursor: pointer;
+  height: 26px;
+  text-align: center;
+  line-height: 26px; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .provinceShow > p {
+  padding: 6px 15px 6px 15px; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .citybShow > p {
+  padding: 6px 15px 6px 15px; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs a {
+  font-size: 12px;
+  color: #000000;
+  display: block;
+  line-height: 16px; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content {
+  border-top: 1px solid #ededed; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city {
+  width: 370px; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li {
+  display: inline-block;
+  margin-top: 7px;
+  width: 87px;
+  height: 20px;
+  text-align: center; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li p, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li p {
+  display: inline-block; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li p a, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li p a {
+  color: #000;
+  display: inline-block;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 4px;
+  cursor: pointer; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li p a:hover, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li p a:hover {
+  background: #ccc;
+  color: #fa0;
+  border-radius: 4px; }
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city {
+  display: none; }
+
+.ng-toolbar-right {
+  float: right; }
+.ng-toolbar-right em {
+  font-size: 10px;
+  margin: 0 0 0 3px; }
+.ng-toolbar-right > li {
+  float: left;
+  height: 100%;
+  padding: 0 10px; }
+.ng-toolbar-right > li a {
+  color: #666;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 35px;
+  height: 35px; }
+.ng-toolbar-right > li a:hover {
+  color: orange; }
+.ng-toolbar-right .my-order {
+  position: relative; }
+.ng-toolbar-right .my-order .ng-toolbar-order {
+  height: 0;
+  overflow: hidden;
+  z-index: 888;
+  transition: all 0.2s;
+  position: absolute;
+  left: -1px;
+  top: 35px;
+  background-color: #fff;
+  width: 81px;
+  border: 1px #f5f5f5 solid; }
+.ng-toolbar-right .my-order .ng-toolbar-order a {
+  font-size: 12px;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  width: 71px; }
+.ng-toolbar-right .my-order:hover {
+  background-color: #fff;
+  outline: 1px #ccc solid; }
+.ng-toolbar-right .my-order:hover .ng-toolbar-order {
+  height: 130px;
+  border: 1px #ccc solid; }
+.ng-toolbar-right .my-buy {
+  position: relative; }
+.ng-toolbar-right .my-buy .ng-toolbar-buy {
+  position: absolute;
+  z-index: 888;
+  left: -1px;
+  top: 34px;
+  border: 1px solid #f5f5f5;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+  background-color: #fff; }
+.ng-toolbar-right .my-buy .ng-toolbar-buy .ng-toolbar-login {
+  width: 180px;
+  height: 56px;
+  margin: 5px 10px;
+  line-height: 56px; }
+.ng-toolbar-right .my-buy .ng-toolbar-buy .ng-toolbar-login > img {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #f7f7f7;
+  display: inline-block;
+  vertical-align: middle; }
+.ng-toolbar-right .my-buy .ng-toolbar-buy .ng-toolbar-login > a {
+  vertical-align: middle;
+  padding-left: 20px;
+  margin-left: 14px; }
+.ng-toolbar-right .my-buy .ng-toolbar-buy .ng-toolbar-buy-list {
+  width: 180px; }
+.ng-toolbar-right .my-buy .ng-toolbar-buy .ng-toolbar-buy-list > a {
+  padding-left: 10px;
+  width: 77px; }
+.ng-toolbar-right .my-buy:hover {
+  background-color: #fff;
+  outline: 1px #ccc solid; }
+.ng-toolbar-right .my-buy:hover .ng-toolbar-buy {
+  height: 180px;
+  border: 1px #ccc solid; }
+.ng-toolbar-right .phone-sn {
+  position: relative; }
+.ng-toolbar-right .phone-sn .phone-sn-box {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+  background-color: #fff;
+  position: absolute;
+  width: 580px;
+  z-index: 888;
+  right: -1px;
+  top: 35px;
+  border: 1px solid #f5f5f5;
+  background: #fff; }
+.ng-toolbar-right .phone-sn .phone-sn-box .sm {
+  float: left;
+  width: 120px;
+  margin: 13px 0 0 20px; }
+.ng-toolbar-right .phone-sn .phone-sn-box .sm > p {
+  font-size: 12px;
+  text-align: center; }
+.ng-toolbar-right .phone-sn .phone-sn-box .sm > img {
+  width: 120px;
+  height: 120px; }
+.ng-toolbar-right .phone-sn:hover {
+  background-color: #fff;
+  outline: 1px #ccc solid; }
+.ng-toolbar-right .phone-sn:hover .phone-sn-box {
+  height: 182px;
+  border: 1px solid #ddd; }
+
+.index-header {
+  height: 110px; }
+.index-header .index-header-container {
+  position: relative;
+  height: 100px; }
+.index-header .index-header-container .ng-header-box > a {
+  position: absolute;
+  top: 10px; }
+.index-header .index-header-container .ng-header-box > a img {
+  width: 190px;
+  height: 90px; }
+.index-header .index-header-container .ng-search {
+  position: absolute;
+  height: 100px;
+  width: 600px;
+  top: 0;
+  left: 300px; }
+.index-header .index-header-container .ng-search .g-search {
+  width: 540px;
+  position: relative;
+  margin: 30px 0 0;
+  float: right; }
+.index-header .index-header-container .ng-search .g-search > em {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  font-size: 14px;
+  color: #ccc; }
+.index-header .index-header-container .ng-search .g-search .search-keyword-box {
+  width: 390px;
+  border-radius: 12px 0 0 12px;
+  float: left;
+  padding: 0 0 0 28px;
+  border: 2px solid #ff8000;
+  border-right: none;
+  position: relative; }
+.index-header .index-header-container .ng-search .g-search .search-keyword-box .search-keyword {
+  width: 380px;
+  padding: 9px 10px 9px 0;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 0;
+  border: none;
+  background: #FFF;
+  color: #BBB;
+  font-size: 12px; }
+.index-header .index-header-container .ng-search .g-search .search-btn {
+  font-size: 18px;
+  width: 120px;
+  background: #ff8000;
+  border-radius: 0 12px 12px 0;
+  height: 40px;
+  font-weight: 700;
+  text-indent: 2px;
+  color: #FFF;
+  border: 0;
+  cursor: pointer; }
+.index-header .index-header-container .ng-search .g-search .g-search-hotwords {
+  margin-top: 5px;
+  font-size: 12px; }
+.index-header .index-header-container .ng-search .g-search .g-search-hotwords > a {
+  color: #999999;
+  padding: 0 20px 0 10px;
+  margin: 3px 0 3px -11px;
+  height: 12px;
+  line-height: 12px;
+  border-left: 1px solid #ddd; }
+.index-header .index-header-container .ng-search .g-search .g-search-hotwords > a:hover {
+  color: #FF6600; }
+.index-header .index-header-container .ng-search .g-search .g-ac-results {
+  position: absolute;
+  left: 0;
+  top: 41px;
+  width: 538px;
+  border: 1px solid #E4E4E4;
+  background: #FFF;
+  z-index: 7000;
+  overflow: hidden;
+  display: none; }
+
+.ng-nav-bar {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  overflow: visible;
+  height: 38px; }
+.ng-nav-bar .ng-nav-barV8 {
+  position: relative; }
+.ng-nav-bar .ng-nav-barV8 .index-sort {
+  position: relative; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .index-all-hook {
+  width: 166px;
+  position: absolute;
+  display: block;
+  height: 38px;
+  top: 0;
+  line-height: 38px;
+  background: #ff8000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 12px 12px 0 0;
+  text-decoration: none;
+  padding-left: 34px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .index-all-hook > i {
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 14px;
+  top: 12px;
+  left: 12px;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401) -928px -26px;
+  background-position: -928px 0; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 200px;
+  height: 476px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-list {
+  width: 200px;
+  height: 476px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 200px;
+  height: 476px;
+  z-index: 7677; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-list > li {
+  position: relative;
+  width: 166px;
+  padding: 0 6px 0 28px;
+  height: 31px;
+  line-height: 31px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-list > li > em {
+  font-size: 14px;
+  vertical-align: middle;
+  height: 12px;
+  width: 1px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-list > li > a {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-list > li .icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 6px;
+  top: 10px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  min-height: 476px;
+  width: 0;
+  overflow: hidden;
+  background: #f3f3f3; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .sort-btn {
+  height: 24px;
+  line-height: 24px;
+  margin: 10px 0 0 8px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .sort-btn > a {
+  display: inline-block;
+  height: 24px;
+  margin-left: 25px;
+  padding: 0 10px;
+  color: #FFF;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 12px;
+  background: #3267ff; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .cate-list {
+  margin: 10px 0 0 0;
+  padding-left: 20px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .cate-list dl {
+  width: 750px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .cate-list dl dt {
+  float: left;
+  width: 84px;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-top: 8px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .cate-list dl dt a {
+  display: block;
+  width: 84px;
+  height: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  font-size: 12px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .cate-list dl dd {
+  width: 650px;
+  float: left;
+  font: 12px/1.5 arial, tahoma, \5b8b\4f53;
+  line-height: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  margin-top: 8px;
+  padding-bottom: 8px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .cate-list dl dd a {
+  margin-right: 15px;
+  display: inline-block;
+  color: #000; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .cate-list dl dd .bluee {
+  color: #3267ff; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 196px;
+  height: 100%;
+  overflow: hidden;
+  background: #f3f3f3; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList {
+  width: 182px;
+  margin: 10px 0 0 8px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList a {
+  float: left;
+  width: 90px;
+  height: 38px;
+  margin: 0 1px 1px 0;
+  padding-top: 7px;
+  background: #FFF; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList a img {
+  width: 80px;
+  height: 30px;
+  margin: 0 auto; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList {
+  width: 180px;
+  margin: 11px 0 0 8px; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList a img {
+  float: left;
+  width: 180px;
+  height: 100px;
+  margin-bottom: 5px;
+  overflow: hidden; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-index {
+  width: 785px;
+  overflow: hidden;
+  margin-left: 210px; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-index .ng-nav li {
+  float: left;
+  position: relative;
+  height: 38px;
+  font-weight: bold;
+  padding: 0 12px 0 13px;
+  line-height: 38px; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-index .ng-nav li a {
+  float: left;
+  position: relative;
+  color: #000;
+  font-size: 15px; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-index .ng-nav li span {
+  position: absolute;
+  width: 25px;
+  height: 8px;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -12px;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401) -37px 0;
+  transition: all .5s; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-index .ng-nav li .hot {
+  position: absolute;
+  display: inline-block;
+  height: 17px;
+  width: 14px;
+  left: auto;
+  right: -14px;
+  top: 0;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401) !important;
+  background-position: -345px -213px !important; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-index .ng-nav li:hover span {
+  bottom: 0px; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-index .ng-nav li:hover a {
+  color: #ff6600; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-index .ng-nav .title-pic {
+  width: 110px;
+  height: 38px;
+  padding: 0; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-index .ng-nav .title-pic img {
+  width: 100%;
+  height: 38px; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-right-wenjuan {
+  position: absolute;
+  top: 0;
+  right: 0; }
+.ng-nav-bar .ng-nav-barV8 .ng-nav-right-wenjuan a img {
+  width: 196px;
+  height: 39px; }
+
+.firstScreen {
+  position: relative;
+  width: 100%;
+  height: 476px; }
+.firstScreen .banner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 476px; }
+.firstScreen .banner-wrapper .banner {
+  position: absolute;
+  width: 100%;
+  height: 476px;
+  top: 0;
+  left: 0; }
+.firstScreen .banner-wrapper .banner ul {
+  position: absolute;
+  width: 100%;
+  height: 476px;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+.firstScreen .banner-wrapper .banner ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 476px; }
+.firstScreen .banner-wrapper .banner ul li a {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -396px;
+  width: 794px;
+  height: 476px; }
+.firstScreen .banner-wrapper .banner ul li a img {
+  width: 794px;
+  height: 476px; }
+.firstScreen .banner-wrapper .btn-left, .firstScreen .banner-wrapper .btn-right {
+  position: absolute;
+  width: 28px;
+  height: 72px;
+  top: 180px;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401); }
+.firstScreen .banner-wrapper .btn-left {
+  margin-left: -395px;
+  border-radius: 0 6px 6px 0;
+  left: 50%;
+  background-position: -1152px 0; }
+.firstScreen .banner-wrapper .btn-right {
+  margin-right: -399px;
+  border-radius: 6px 0 0 6px;
+  right: 50%;
+  background-position: -1152px -72px; }
+.firstScreen .banner-wrapper .banner-nav-wrapper {
+  position: absolute;
+  top: 345px;
+  width: 100%;
+  height: 6px;
+  text-align: center;
+  font-size: 0; }
+.firstScreen .banner-wrapper .banner-nav-wrapper .banner-nav {
+  position: relative;
+  display: inline-block;
+  opacity: .8;
+  padding: 0 8px 0 0;
+  height: 6px;
+  margin-left: 0; }
+.firstScreen .banner-wrapper .banner-nav-wrapper .banner-nav .page-item {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+  width: 20px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5); }
+.firstScreen .banner-wrapper .banner-nav-wrapper .banner-nav .current {
+  background-color: #FF6600; }
+.firstScreen .first-right {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: 398px;
+  width: 196px;
+  height: 476px;
+  background: #FFF;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden; }
+.firstScreen .first-right .top-box {
+  overflow: hidden;
+  position: relative;
+  width: 196px;
+  height: 225px; }
+.firstScreen .first-right .top-box .user-img {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 10px;
+  top: 10px;
+  background: url(../images/tool-logo.png);
+  z-index: 1;
+  border: 1px solid #f7f7f7;
+  border-radius: 50%;
+  background-size: 100% 100%; }
+.firstScreen .first-right .top-box .not-login {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+.firstScreen .first-right .top-box .not-login .btn-group {
+  float: left;
+  margin-top: 15px;
+  margin-left: 66px;
+  width: 125px;
+  height: 38px;
+  font-size: 12px;
+  color: #333; }
+.firstScreen .first-right .top-box .not-login .btn-group .hi {
+  width: 122px;
+  height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 5px; }
+.firstScreen .first-right .top-box .not-login .new, .firstScreen .first-right .top-box .not-login .super {
+  display: block;
+  width: 156px;
+  height: 24px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 24px;
+  margin-left: 20px;
+  font-size: 12px; }
+.firstScreen .first-right .top-box .not-login .new {
+  color: #fff;
+  margin-top: 70px;
+  background: #ff8000; }
+.firstScreen .first-right .top-box .not-login .super {
+  color: #fada99;
+  margin-top: 10px;
+  background-image: linear-gradient(-90deg, #373a77 3%, #17125b 100%); }
+.firstScreen .first-right .top-box .three-entry {
+  position: absolute;
+  width: 196px;
+  height: 62px;
+  left: 0;
+  bottom: 23px;
+  background: #fff; }
+.firstScreen .first-right .top-box .three-entry a {
+  float: left;
+  width: 65px;
+  height: 62px; }
+.firstScreen .first-right .top-box .three-entry a img {
+  width: 36px;
+  height: 36px;
+  margin: 6px auto; }
+.firstScreen .first-right .top-box .three-entry a p {
+  height: 20px;
+  max-width: 66px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+  text-align: center; }
+.firstScreen .first-right .bot-box {
+  position: relative;
+  height: 250px;
+  width: 196px;
+  border-top: 1px solid #f2f2f2; }
+.firstScreen .first-right .bot-box ul {
+  margin-right: -2px; }
+.firstScreen .first-right .bot-box ul li {
+  float: left;
+  width: 65px;
+  height: 85px;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #f2f2f2; }
+.firstScreen .first-right .bot-box ul li a img {
+  width: 26px;
+  height: 26px;
+  margin: 12px 20px; }
+.firstScreen .first-right .bot-box ul li a p {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  max-width: 66px;
+  overflow: hidden; }
+.firstScreen .four-wrap {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  margin-left: -391px;
+  width: 786px;
+  height: 112px;
+  overflow: hidden; }
+.firstScreen .four-wrap .four-sm-banner {
+  width: 786px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 112px; }
+.firstScreen .four-wrap .four-sm-banner li {
+  float: left;
+  position: relative;
+  height: 112px;
+  background: #FFF;
+  margin-left: 2px;
+  cursor: default;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 194px; }
+.firstScreen .four-wrap .four-sm-banner li img {
+  width: 100%;
+  height: 100%; }
+
+.new-twoFloor {
+  overflow: hidden;
+  background-color: #f2f2f2; }
+.new-twoFloor .new-twoFloor-con {
+  margin: 10px auto 0; }
+.new-twoFloor .new-twoFloor-con .little-area {
+  float: left;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 590px; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 8px; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .title-pic {
+  float: left;
+  margin: 15px 0 0 16px;
+  border-radius: 8px; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .title-pic img {
+  width: 106px;
+  height: 30px;
+  border-radius: 8px; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .cc-infor {
+  float: left;
+  position: absolute;
+  left: 135px;
+  top: 22px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  z-index: 1; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .time {
+  float: left;
+  position: absolute;
+  line-height: 24px;
+  height: 24px;
+  left: 208px;
+  top: 12px;
+  z-index: 1; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .time span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .time i {
+  font-size: 12px; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .tab-list .t-list {
+  position: absolute;
+  right: 12px;
+  top: 17px;
+  width: 152px;
+  height: 24px;
+  border: 1px solid #ef0027;
+  border-radius: 3px; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .tab-list .t-list ul li {
+  float: left;
+  color: red;
+  width: 76px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+  cursor: default; }
+.new-twoFloor .new-twoFloor-con .little-area .ms-title .tab-list .t-list ul .cur {
+  background: red;
+  color: #fff; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box ul li {
+  float: left;
+  margin-left: 20px; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box ul li a img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 10px 10px 10px;
+  border-radius: 6px; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box ul li a .title {
+  width: 170px;
+  height: 20px;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  text-align: left;
+  word-break: break-all; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box ul li a .price-box {
+  height: 21px;
+  margin: 4px 4px 4px 0;
+  overflow: hidden; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box ul li a .price-box .price {
+  float: left;
+  line-height: 21px;
+  color: #F30;
+  font-size: 18px;
+  font-weight: bold; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box ul li a .price-box .refprice {
+  float: left;
+  line-height: 16px;
+  color: #999;
+  font-size: 12px;
+  margin-left: 6px;
+  margin-top: 3px;
+  text-decoration: line-through; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box ul li a .line {
+  float: left;
+  margin: 9px 0 0 0;
+  width: 100px;
+  height: 6px;
+  background: #fddee0;
+  border-radius: 100px;
+  overflow: hidden; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box ul li a .line span {
+  float: left;
+  height: 6px;
+  border-radius: 0 3px 3px 0;
+  background: #ef0027; }
+.new-twoFloor .new-twoFloor-con .little-area .content-box ul li a .precent {
+  float: left;
+  margin-left: 10px;
+  color: #999;
+  font-size: 12px; }
+.new-twoFloor .new-twoFloor-con .little-area2 .ms-title .sub-title-pic {
+  float: left;
+  height: 24px;
+  margin-top: 17px;
+  line-height: 24px;
+  padding: 0 5px;
+  color: red;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid red;
+  border-radius: 4px;
+  margin-left: 10px; }
+
+/*# sourceMappingURL=index.css.map */
