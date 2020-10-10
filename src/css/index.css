@@ -391,8 +391,18 @@
   border: 1px solid #E4E4E4;
   background: #FFF;
   z-index: 7000;
+  max-height: 188px;
   overflow: hidden;
   display: none; }
+.index-header .index-header-container .ng-search .g-search .g-ac-results ul .results-close, .ng-fix-bar .ng-search .g-search .g-ac-results ul .results-close {
+  position: relative;
+  height: 20px; }
+.index-header .index-header-container .ng-search .g-search .g-ac-results ul .results-close .s-close, .ng-fix-bar .ng-search .g-search .g-ac-results ul .results-close .s-close {
+  position: absolute;
+  right: 10px;
+  cursor: pointer; }
+.index-header .index-header-container .ng-search .g-search .g-ac-results ul li, .ng-fix-bar .ng-search .g-search .g-ac-results ul li {
+  cursor: pointer; }
 
 .index-header {
   height: 110px; }
@@ -483,10 +493,15 @@
   position: absolute;
   left: 200px;
   top: 0;
+  z-index: 88888;
   min-height: 476px;
-  width: 0;
+  width: 989px;
+  display: none;
   overflow: hidden;
   background: #f3f3f3; }
+.ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .item {
+  height: 476px;
+  display: none; }
 .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .sort-btn {
   height: 24px;
   line-height: 24px;
@@ -1495,7 +1510,6 @@
   margin-left: 6px; }
 
 .ng-fix-bar {
-  display: none;
   position: fixed;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px;

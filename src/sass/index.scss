@@ -506,8 +506,23 @@
             border: 1px solid #E4E4E4;
             background: #FFF;
             z-index: 7000;
+            max-height: 188px;
             overflow: hidden;
             display: none;
+            ul {
+                .results-close {
+                    position: relative;
+                    height: 20px;
+                    .s-close {
+                        position: absolute;
+                        right: 10px;
+                        cursor: pointer;
+                    }
+                }
+                li {
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
@@ -625,11 +640,17 @@
                         position: absolute;
                         left: 200px;
                         top: 0;
+                        z-index: 88888;
                         min-height: 476px;
-                        // width: 989px;
-                        width: 0;
+                        width: 989px;
+                        display: none;
+                        // width: 0;
                         overflow: hidden;
                         background: #f3f3f3;
+                        .item {
+                            height: 476px;
+                            display: none;
+                        }
                         .sort-btn {
                             height: 24px;
                             line-height: 24px;
@@ -1971,7 +1992,6 @@
 //底部 end
 //悬浮搜索框
 .ng-fix-bar {
-    display: none;
     position: fixed;
     background: #fff;
     box-shadow: rgba(0, 0, 0, .2) 0 1px 5px;
