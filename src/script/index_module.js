@@ -131,23 +131,6 @@ define([], function() {
                 $(this).hide();
             });
         }(),
-        // tb: function() {
-        //     let search = $('.search-keyword');
-        //     let list = $('.g-ac-results ul');
-
-        //     function taobao(data) {
-        //         console.log(data.words);
-        //         let arr = data.words;
-        //         let str = '';
-        //         for (let value of arr) {
-        //             str += `
-        //                 <li>${value.keyword}</li>
-        //             `;
-        //         }
-        //         list.html(str);
-        //     }
-        //     return taobao;
-        // },
         searchk: ! function() {
             // $('.search-keyword').val('华为/HUAWEI nova 7');
             $('.search-keyword').attr({
@@ -159,17 +142,31 @@ define([], function() {
                 $('.search-keyword').attr({
                     placeholder: ""
                 })
+            })
+            $('.search-keyword').on('change', function() {
+                console.log(1);
                 $('.g-ac-results ul li').each(function(index, element) {
                     $(this).on('click', function() {
-                        console.log($('.g-ac-results ul li').eq(index).html());
+                        console.log(1);
+                        let con = $('.g-ac-results ul li').eq(index).html();
+                        $('.search-keyword').val(con);
+                        $('.g-ac-results').hide();
+                        $('.s-close').on('click', function() {
+                            $('.g-ac-results').hide();
+                        })
                     })
                 })
-                console.log($('.g-ac-results ul> li'));
             })
 
+            //失去焦点
             // $('.search-keyword').on('blur', function() {
-            //     $('.g-ac-results').hide();
+            //     if (!$('.g-ac-results ul li')) {
+            //         console.log(1);
+            //         $('.g-ac-results').hide();
+            //     }
+            //     //     $('.g-ac-results').hide();
             // })
+
             $('.search-keyword').on('input', function() {
                 if ($('.search-keyword').val() == '') {
                     $('.g-ac-results').hide();
@@ -177,11 +174,6 @@ define([], function() {
                     $('.g-ac-results').show();
                 }
             })
-            if ($('.s-close')) {
-                $('.s-close').on('click', function() {
-                    $('.g-ac-results').hide();
-                })
-            }
 
             //搜索数据渲染
             let search = $('.search-keyword');
@@ -231,6 +223,139 @@ define([], function() {
                 // })
 
 
-        }()
+        }(),
+        lunbou: ! function() { //轮播图
+            class Lunbo {
+                constructor() {
+                    this.lunbo = $('.banner-wrapper');
+                    this.piclist = $('.banner ul li');
+                    this.btnlist = $('.page-item');
+                    this.leftarrow = $('.btn-left');
+                    this.rightarrow = $('.btn-right');
+                    this.index = 0;
+                    this.timer = null;
+                }
+                init() {
+                    // console.log(this.lunbo);
+                    // console.log(this.piclist);
+                    // console.log(this.btnlist);
+                    // 1.鼠标移入lunbo,显示左右箭头，反之隐藏
+                    //事件里面的this指向当前操作的元素对象。方法里面的this指向实例。
+                    let _this = this; //实例对象
+                    this.lunbo.hover(function() {
+                        _this.leftarrow.show();
+                        _this.rightarrow.show();
+                        // 5.鼠标移入lunbo,停止。
+                        clearInterval(_this.timer);
+                    }, function() {
+                        _this.leftarrow.hide();
+                        _this.rightarrow.hide();
+                        //继续轮播
+                        _this.timer = window.setInterval(function() {
+                            _this.rightarrowclick();
+                        }, 3000);
+                    });
+                    // 2.点击对应得小圆圈，当前点击的小圆圈添加类名，其他的隐藏（和小圆圈对应的图片显示）
+                    this.btnlist.on('click', function() {
+                        _this.index = $(this).index(); //将当前按钮对应的索引存储下来
+                        _this.tabswitch();
+                    });
+
+                    //3.点击左右箭头进行图片切换
+                    this.rightarrow.on('click', function() {
+                        _this.rightarrowclick();
+                    });
+
+                    this.leftarrow.on('click', function() {
+                        _this.leftarrowclick();
+                    });
+
+                    //4.自动轮播
+                    this.timer = window.setInterval(function() {
+                        _this.rightarrowclick();
+                    }, 3000);
+                }
+
+                tabswitch() {
+                    this.btnlist.eq(this.index).addClass('current').siblings().removeClass('current');
+                    this.piclist.eq(this.index).stop(true).animate({
+                        opacity: 1
+                    }).siblings().stop(true).animate({
+                        opacity: 0
+                    });
+                }
+
+                rightarrowclick() {
+                    this.index++;
+                    if (this.index > this.btnlist.size() - 1) {
+                        this.index = 0;
+                    }
+                    this.tabswitch();
+                }
+
+                leftarrowclick() {
+                    this.index--;
+                    if (this.index < 0) {
+                        this.index = this.btnlist.size() - 1;
+                    }
+                    this.tabswitch();
+                }
+            }
+            new Lunbo().init();
+        }(),
+        lunbou1: ! function() {
+            function Taobao() {
+                this.banner = $('.content-box');
+                this.list = $('.content-box ul');
+                this.picli = $('.content-box ul li'); //6张图
+                // this.picbtn = document.querySelectorAll('.banner ol li'); //5个圆圈
+                // this.leftarrow = document.querySelector('#left');
+                // this.rightarrow = document.querySelector('#right');
+                this.index = 0; //存储索引的变量。
+                this.timer = null;
+            }
+
+            Taobao.prototype.init = function() {
+                this.liwidth = this.picli[0].offsetWidth;
+                console.log(this.banner);
+                console.log(this.list);
+                console.log(this.picli);
+                // this.list.style.width = this.picli.length * this.picli[0].offsetWidth + 'px';
+                this.list.attr({ top: this.picli.size() * this.picli[0].attr("height") });
+                //给每个小圆点添加点击事件
+                // for (let i = 0; i < this.picbtn.length; i++) {
+                //     this.picbtn[i].onclick = () => {
+                //         this.index = i - 1;
+                //         this.tabswitch();
+                //     }
+                // }
+            }
+
+            Taobao.prototype.tabswitch = function() {
+                this.index++;
+                if (this.index === this.picbtn.length + 1) {
+                    this.index = 1;
+                    this.list.style.left = 0 + 'px';
+                }
+                if (this.index === -1) {
+                    this.list.style.left = -this.liwidth * this.picbtn.length + 'px';
+                    this.index = this.picbtn.length - 1;
+                    console.log(this.list.style.left, this.liwidth * 5);
+                }
+                for (let i = 0; i < this.picbtn.length; i++) {
+                    this.picbtn[i].className = '';
+                }
+                if (this.index === this.picbtn.length) {
+                    this.picbtn[0].className = 'active';
+                } else {
+                    this.picbtn[this.index].className = 'active';
+                }
+                bufferMove(this.list, {
+                    left: -this.index * this.liwidth
+                });
+
+            }
+            new Taobao().init();
+        }
     }
 });

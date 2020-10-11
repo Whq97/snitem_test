@@ -1,11 +1,7 @@
-.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .new-twoFloor .new-twoFloor-con .little-area .content-box::after, .new-twoFloor .new-twoFloor-con .little-area .content-box ul li a::after, .J-floor3 .new-twoFloor-con .little-area .ms-title .code-wrapper111::after, .new-channel-ground-w .new-channel-ground .channel-wrap::after, .new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .title::after, .new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .content::after, .new-rec-tab-w .new-rec-tab .tab-content::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after {
+.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .new-twoFloor .new-twoFloor-con .little-area .content-box::after, .new-twoFloor .new-twoFloor-con .little-area .content-box ul li a::after, .J-floor3 .new-twoFloor-con .little-area .ms-title .code-wrapper111::after, .new-channel-ground-w .new-channel-ground .channel-wrap::after, .new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .title::after, .new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .content::after, .new-rec-tab-w .new-rec-tab .tab-content::after {
   content: '';
   clear: both;
   display: block; }
-
-.wrapper {
-  width: 1190px;
-  margin: 0 auto; }
 
 .ng-toolbar {
   height: 35px;
@@ -638,6 +634,96 @@
 .ng-nav-bar .ng-nav-barV8 .ng-nav-right-wenjuan a img {
   width: 196px;
   height: 39px; }
+
+.ng-footer .ng-ser-box {
+  background: #f5f5f5;
+  border-top: 1px solid #e7e7e7;
+  padding-bottom: 20px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise {
+  border-bottom: 1px solid #eaeaea;
+  padding: 12px 0; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl {
+  padding-bottom: 20px;
+  width: 238px;
+  float: left; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dt {
+  float: left; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dt a img {
+  width: 48px;
+  height: 48px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd {
+  float: left;
+  margin-left: 10px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd a {
+  font-size: 14px;
+  font-weight: bold; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd a:hover {
+  color: #F60; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd p {
+  margin-top: 3px;
+  color: #545454;
+  font-size: 12px;
+  margin-bottom: 6px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn {
+  float: left;
+  width: 90px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn p {
+  line-height: 40px;
+  font-weight: 700;
+  height: 35px;
+  font-size: 14px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn .con {
+  font-size: 12px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl {
+  width: 210px;
+  float: left; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dt {
+  line-height: 40px;
+  font-weight: 700;
+  height: 35px;
+  font-size: 14px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dd a {
+  font-size: 12px;
+  color: #545454; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dd a:hover {
+  color: #F60; }
+.ng-footer .ng-s-footer {
+  padding-top: 15px; }
+.ng-footer .ng-s-footer .ng-s-f-con p {
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+  height: 25px;
+  line-height: 25px; }
+.ng-footer .ng-s-footer .ng-s-f-con p span {
+  padding: 0 8px;
+  color: #888888; }
+.ng-footer .ng-s-footer .ng-s-f-con .sp-icon {
+  position: relative; }
+.ng-footer .ng-s-footer .ng-s-f-con .sp a {
+  color: #999; }
+.ng-footer .ng-s-footer .ng-s-f-con .sp i {
+  position: absolute;
+  left: 600px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: url(https://res.suning.cn/public/v3/css/images/gwab-icon.png) 0 0 no-repeat; }
+.ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic {
+  width: 358px;
+  margin: 0 auto; }
+.ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic img {
+  float: left;
+  margin-right: 8px; }
+
+.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .new-twoFloor .new-twoFloor-con .little-area .content-box::after, .new-twoFloor .new-twoFloor-con .little-area .content-box ul li a::after, .J-floor3 .new-twoFloor-con .little-area .ms-title .code-wrapper111::after, .new-channel-ground-w .new-channel-ground .channel-wrap::after, .new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .title::after, .new-channel-ground-w .new-channel-ground .channel-wrap .channel-box .content::after, .new-rec-tab-w .new-rec-tab .tab-content::after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.wrapper {
+  width: 1190px;
+  margin: 0 auto; }
 
 .firstScreen {
   position: relative;
@@ -1374,87 +1460,6 @@
   background: #fff;
   border-radius: 3px;
   padding: 0 2px; }
-
-.ng-footer .ng-ser-box {
-  background: #f5f5f5;
-  border-top: 1px solid #e7e7e7;
-  padding-bottom: 20px; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise {
-  border-bottom: 1px solid #eaeaea;
-  padding: 12px 0; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl {
-  padding-bottom: 20px;
-  width: 238px;
-  float: left; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dt {
-  float: left; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dt a img {
-  width: 48px;
-  height: 48px; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd {
-  float: left;
-  margin-left: 10px; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd a {
-  font-size: 14px;
-  font-weight: bold; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd a:hover {
-  color: #F60; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd p {
-  margin-top: 3px;
-  color: #545454;
-  font-size: 12px;
-  margin-bottom: 6px; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn {
-  float: left;
-  width: 90px; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn p {
-  line-height: 40px;
-  font-weight: 700;
-  height: 35px;
-  font-size: 14px; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn .con {
-  font-size: 12px; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl {
-  width: 210px;
-  float: left; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dt {
-  line-height: 40px;
-  font-weight: 700;
-  height: 35px;
-  font-size: 14px; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dd a {
-  font-size: 12px;
-  color: #545454; }
-.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dd a:hover {
-  color: #F60; }
-.ng-footer .ng-s-footer {
-  padding-top: 15px; }
-.ng-footer .ng-s-footer .ng-s-f-con p {
-  text-align: center;
-  font-size: 12px;
-  color: #666666;
-  height: 25px;
-  line-height: 25px; }
-.ng-footer .ng-s-footer .ng-s-f-con p span {
-  padding: 0 8px;
-  color: #888888; }
-.ng-footer .ng-s-footer .ng-s-f-con .sp-icon {
-  position: relative; }
-.ng-footer .ng-s-footer .ng-s-f-con .sp a {
-  color: #999; }
-.ng-footer .ng-s-footer .ng-s-f-con .sp i {
-  position: absolute;
-  left: 600px;
-  top: 2px;
-  width: 20px;
-  height: 20px;
-  background: url(https://res.suning.cn/public/v3/css/images/gwab-icon.png) 0 0 no-repeat; }
-.ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic {
-  width: 358px;
-  margin: 0 auto; }
-.ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic img {
-  float: left;
-  margin-right: 8px; }
 
 .floatbar-w {
   position: fixed;

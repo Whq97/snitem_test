@@ -1,0 +1,281 @@
+//二级导航
+%index-all-hook-a {
+    width: 166px;
+    position: absolute;
+    display: block;
+    height: 38px;
+    top: 0;
+    line-height: 38px;
+    background: #ff8000;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 12px 12px 0 0;
+    text-decoration: none;
+    padding-left: 34px;
+    >i {
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 14px;
+        top: 12px;
+        left: 12px;
+        background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401) -928px -26px;
+        background-position: -928px 0;
+    }
+}
+
+.ng-nav-bar {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    overflow: visible;
+    height: 38px;
+    .ng-nav-barV8 {
+        position: relative;
+        .index-sort {
+            position: relative;
+            .index-all-hook {
+                @extend %index-all-hook-a
+            }
+            .dacu-list-wrapper {
+                .index-sort-list-box {
+                    position: absolute;
+                    top: 38px;
+                    left: 0;
+                    width: 200px;
+                    height: 476px;
+                    .index-list {
+                        width: 200px;
+                        height: 476px;
+                        background: #fff;
+                        position: absolute;
+                        left: 0;
+                        top: 1px;
+                        width: 200px;
+                        height: 476px;
+                        z-index: 7677;
+                        >li {
+                            position: relative;
+                            width: 166px;
+                            // overflow: hidden;
+                            padding: 0 6px 0 28px;
+                            height: 31px;
+                            line-height: 31px;
+                            >em {
+                                font-size: 14px;
+                                vertical-align: middle;
+                                height: 12px;
+                                width: 1px;
+                            }
+                            >a {
+                                display: inline-block;
+                                vertical-align: middle;
+                                color: #000;
+                                font-size: 14px;
+                                text-decoration: none;
+                                // letter-spacing: 1px;
+                            }
+                            .icon {
+                                position: absolute;
+                                width: 16px;
+                                height: 16px;
+                                left: 6px;
+                                top: 10px;
+                            }
+                        }
+                    }
+                    .index-sort-detail {
+                        // transition: all 0.2s;
+                        position: absolute;
+                        left: 200px;
+                        top: 0;
+                        z-index: 88888;
+                        min-height: 476px;
+                        width: 989px;
+                        display: none;
+                        // width: 0;
+                        overflow: hidden;
+                        background: #f3f3f3;
+                        .item {
+                            height: 476px;
+                            display: none;
+                        }
+                        .sort-btn {
+                            height: 24px;
+                            line-height: 24px;
+                            margin: 10px 0 0 8px;
+                            >a {
+                                display: inline-block;
+                                height: 24px;
+                                margin-left: 25px;
+                                padding: 0 10px;
+                                color: #FFF;
+                                line-height: 24px;
+                                text-align: center;
+                                text-decoration: none;
+                                border-radius: 4px;
+                                font-size: 12px;
+                                background: rgb(50, 103, 255);
+                            }
+                        }
+                        .cate-list {
+                            margin: 10px 0 0 0;
+                            padding-left: 20px;
+                            dl {
+                                width: 750px;
+                                dt {
+                                    float: left;
+                                    width: 84px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    font-weight: 700;
+                                    padding-left: 10px;
+                                    padding-top: 8px;
+                                    a {
+                                        display: block;
+                                        width: 84px;
+                                        height: 20px;
+                                        overflow: hidden;
+                                        text-decoration: none;
+                                        color: #333;
+                                        font-size: 12px;
+                                    }
+                                }
+                                dd {
+                                    width: 650px;
+                                    float: left;
+                                    font: 12px/1.5 arial, tahoma, \5b8b\4f53;
+                                    line-height: 20px;
+                                    overflow: hidden;
+                                    border-bottom: 1px solid #eee;
+                                    margin-top: 8px;
+                                    padding-bottom: 8px;
+                                    a {
+                                        margin-right: 15px;
+                                        display: inline-block;
+                                        color: #000;
+                                    }
+                                    .bluee {
+                                        color: rgb(50, 103, 255);
+                                    }
+                                }
+                            }
+                        }
+                        .actShow {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 196px;
+                            height: 100%;
+                            overflow: hidden;
+                            background: #f3f3f3;
+                            .brandList {
+                                @extend %cleafix;
+                                width: 182px;
+                                margin: 10px 0 0 8px;
+                                a {
+                                    float: left;
+                                    width: 90px;
+                                    height: 38px;
+                                    margin: 0 1px 1px 0;
+                                    padding-top: 7px;
+                                    background: #FFF;
+                                    img {
+                                        width: 80px;
+                                        height: 30px;
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
+                            .actList {
+                                @extend %cleafix;
+                                width: 180px;
+                                margin: 11px 0 0 8px;
+                                a {
+                                    img {
+                                        float: left;
+                                        width: 180px;
+                                        height: 100px;
+                                        margin-bottom: 5px;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ng-nav-index {
+            width: 785px;
+            overflow: hidden;
+            margin-left: 210px;
+            .ng-nav {
+                li {
+                    float: left;
+                    position: relative;
+                    height: 38px;
+                    font-weight: bold;
+                    padding: 0 12px 0 13px;
+                    line-height: 38px;
+                    a {
+                        float: left;
+                        position: relative;
+                        color: #000;
+                        font-size: 15px;
+                    }
+                    span {
+                        position: absolute;
+                        width: 25px;
+                        height: 8px;
+                        bottom: -8px;
+                        left: 50%;
+                        margin-left: -12px;
+                        background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401) -37px 0;
+                        transition: all .5s;
+                    }
+                    .hot {
+                        position: absolute;
+                        display: inline-block;
+                        height: 17px;
+                        width: 14px;
+                        left: auto;
+                        right: -14px;
+                        top: 0;
+                        background: url(https://res.suning.cn/project/cmsWeb/suning/homepage/v8/css/images/index.png?v=2020091401)!important;
+                        background-position: -345px -213px!important;
+                    }
+                }
+                li:hover span {
+                    bottom: 0px;
+                }
+                li:hover a {
+                    color: rgb(255, 102, 0);
+                }
+                .title-pic {
+                    width: 110px;
+                    height: 38px;
+                    padding: 0;
+                    img {
+                        width: 100%;
+                        height: 38px;
+                    }
+                }
+            }
+        }
+        .ng-nav-right-wenjuan {
+            position: absolute;
+            top: 0;
+            right: 0;
+            a {
+                img {
+                    width: 196px;
+                    height: 39px;
+                }
+            }
+        }
+    }
+}
+
+//二级导航 end

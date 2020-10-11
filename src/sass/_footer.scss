@@ -1,0 +1,126 @@
+//底部
+.ng-footer {
+    .ng-ser-box {
+        background: #f5f5f5;
+        border-top: 1px solid #e7e7e7;
+        padding-bottom: 20px;
+        .ng-ser-box-con {
+            .ng-promise {
+                @extend %cleafix;
+                border-bottom: 1px solid #eaeaea;
+                padding: 12px 0;
+                dl {
+                    padding-bottom: 20px;
+                    width: 238px;
+                    float: left;
+                    dt {
+                        float: left;
+                        a {
+                            img {
+                                width: 48px;
+                                height: 48px;
+                            }
+                        }
+                    }
+                    dd {
+                        float: left;
+                        margin-left: 10px;
+                        a {
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        a:hover {
+                            color: #F60;
+                        }
+                        p {
+                            margin-top: 3px;
+                            color: #545454;
+                            font-size: 12px;
+                            margin-bottom: 6px;
+                        }
+                    }
+                }
+            }
+            .ng-help-box {
+                @extend %cleafix;
+                .sbsn {
+                    float: left;
+                    width: 90px;
+                    p {
+                        line-height: 40px;
+                        font-weight: 700;
+                        height: 35px;
+                        font-size: 14px;
+                    }
+                    .con {
+                        font-size: 12px;
+                    }
+                }
+                dl {
+                    width: 210px;
+                    float: left;
+                    dt {
+                        line-height: 40px;
+                        font-weight: 700;
+                        height: 35px;
+                        font-size: 14px;
+                    }
+                    dd {
+                        a {
+                            font-size: 12px;
+                            color: #545454;
+                        }
+                        a:hover {
+                            color: #F60;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ng-s-footer {
+        padding-top: 15px;
+        .ng-s-f-con {
+            p {
+                text-align: center;
+                font-size: 12px;
+                color: #666666;
+                height: 25px;
+                line-height: 25px;
+                span {
+                    padding: 0 8px;
+                    color: #888888;
+                }
+            }
+            .sp-icon {
+                position: relative;
+            }
+            .sp {
+                a {
+                    color: #999;
+                }
+                i {
+                    position: absolute;
+                    left: 600px;
+                    top: 2px;
+                    width: 20px;
+                    height: 20px;
+                    background: url(https://res.suning.cn/public/v3/css/images/gwab-icon.png) 0 0 no-repeat;
+                }
+            }
+            .foot-pic-w {
+                .foot-pic {
+                    @extend %cleafix;
+                    width: 358px;
+                    margin: 0 auto;
+                    img {
+                        float: left;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//底部 end
