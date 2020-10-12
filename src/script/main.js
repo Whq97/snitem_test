@@ -43,5 +43,5 @@ require.config({
 
 //加载模块
 require(['jquery', 'jq_cookie', 'jq_lazyload', 'jq_pagination'], function() {
-    require(['index_module', 'list_module']);
+    require(['index_module', 'list_module', 'detail_module']);
 });

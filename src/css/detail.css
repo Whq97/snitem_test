@@ -1,4 +1,4 @@
-.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .second-filter .second-up::after, .proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul::after {
+.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .second-filter .second-up::after, .proinfo .proinfo-container::after, .proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w .imgzoom-thumb ul::after, .proinfo .proinfo-container .proinfo-main::after, .proinfo .proinfo-container .proinfo-main .nums::after, .proinfo .proinfo-container .proinfo-main .nums .cont::after {
   content: '';
   clear: both;
   display: block; }
@@ -716,7 +716,7 @@
   float: left;
   margin-right: 8px; }
 
-.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .second-filter .second-up::after, .proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul::after {
+.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .second-filter .second-up::after, .proinfo .proinfo-container::after, .proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w .imgzoom-thumb ul::after, .proinfo .proinfo-container .proinfo-main::after, .proinfo .proinfo-container .proinfo-main .nums::after, .proinfo .proinfo-container .proinfo-main .nums .cont::after {
   content: '';
   clear: both;
   display: block; }
@@ -778,6 +778,9 @@
   color: #f60;
   text-decoration: underline; }
 
+.proinfo .proinfo-container .proinfo-left {
+  float: left;
+  position: relative; }
 .proinfo .proinfo-container .proinfo-left .imgzoom-main {
   position: relative; }
 .proinfo .proinfo-container .proinfo-left .imgzoom-main a img {
@@ -793,13 +796,149 @@
   top: 0;
   border: 1px solid #aaa;
   background: #fede4f 50% top no-repeat; }
-.proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul li {
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w {
+  height: 64px;
+  position: relative;
+  margin: 5px 0; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w .imgzoom-letf {
+  background-position: -903px -656px;
+  top: 24px;
+  left: 0;
+  width: 12px;
+  height: 20px;
+  z-index: 11;
+  position: absolute;
+  background-image: url(http://res.suning.cn/project/pdsWeb/csspc2017/images/f-icons-ex1.png?v=1599209773); }
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w .imgzoom-right {
+  width: 12px;
+  height: 20px;
+  top: 24px;
+  right: 0;
+  height: 20px;
+  z-index: 11;
+  position: absolute;
+  background-position: -1042px -472px;
+  background-image: url(http://res.suning.cn/project/pdsWeb/csspc2017/images/f-icons-ex1.png?v=1599209773); }
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w .imgzoom-thumb {
+  position: absolute;
+  overflow: hidden;
+  height: 64px;
+  width: 392px;
+  margin-left: 30px; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w .imgzoom-thumb ul {
+  position: absolute;
+  width: 800px; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w .imgzoom-thumb ul li {
   margin-right: 17px;
   float: left; }
-.proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul li img {
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w .imgzoom-thumb ul li img {
   width: 60px;
   height: 60px; }
-.proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul .cur {
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb-w .imgzoom-thumb ul .cur {
   border: 2px solid #f50; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-daf {
+  display: none;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 450px;
+  overflow: hidden; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-daf img {
+  width: 800px;
+  height: 800px; }
+.proinfo .proinfo-container .proinfo-main {
+  float: left;
+  margin-left: 20px; }
+.proinfo .proinfo-container .proinfo-main .proinfo-title span {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  background-color: #f50;
+  padding: 0 5px;
+  margin-right: 5px; }
+.proinfo .proinfo-container .proinfo-main .proinfo-title h2 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold; }
+.proinfo .proinfo-container .proinfo-main .proinfo-title h3 {
+  color: #f60;
+  margin-top: 3px; }
+.proinfo .proinfo-container .proinfo-main .price-container {
+  background: #fff8f3;
+  margin-top: 20px;
+  padding: 10px 0 100px 10px; }
+.proinfo .proinfo-container .proinfo-main .price-container .price > span {
+  font-size: 12px;
+  color: #999999;
+  margin-right: 15px; }
+.proinfo .proinfo-container .proinfo-main .price-container .price p {
+  display: inline-block;
+  color: #e00;
+  font-weight: bold; }
+.proinfo .proinfo-container .proinfo-main .price-container .price p span {
+  font-size: 30px; }
+.proinfo .proinfo-container .proinfo-main .price-container .price p i {
+  font-size: 24px; }
+.proinfo .proinfo-container .proinfo-main .price-container .price p .fuhao {
+  font-size: 18px; }
+.proinfo .proinfo-container .proinfo-main .nums {
+  margin-top: 10px; }
+.proinfo .proinfo-container .proinfo-main .nums > span {
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  font-size: 12px;
+  color: #999999;
+  margin-right: 15px;
+  display: block;
+  letter-spacing: 1em; }
+.proinfo .proinfo-container .proinfo-main .nums .cont {
+  float: left;
+  display: block; }
+.proinfo .proinfo-container .proinfo-main .nums .cont .jian {
+  float: left;
+  width: 22px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #cccccc;
+  cursor: pointer; }
+.proinfo .proinfo-container .proinfo-main .nums .cont input {
+  float: left;
+  outline: 0;
+  width: 25px;
+  height: 18px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+  text-align: center; }
+.proinfo .proinfo-container .proinfo-main .nums .cont .jia {
+  background: #cccccc;
+  line-height: 30px;
+  cursor: pointer;
+  float: left;
+  text-align: center;
+  width: 22px;
+  height: 30px; }
+.proinfo .proinfo-container .proinfo-main .mainbtns {
+  margin-top: 80px; }
+.proinfo .proinfo-container .proinfo-main .mainbtns .nowbuy {
+  font-weight: 600;
+  background: #663200;
+  color: #fff;
+  width: 115px;
+  height: 40px;
+  border-color: #663200; }
+.proinfo .proinfo-container .proinfo-main .mainbtns .togoodscart {
+  background: #f50;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-color: #f50;
+  width: 135px;
+  height: 40px; }
 
 /*# sourceMappingURL=detail.css.map */

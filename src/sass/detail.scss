@@ -94,7 +94,10 @@
 //放大镜
 .proinfo {
     .proinfo-container {
+        @extend %cleafix;
         .proinfo-left {
+            float: left;
+            position: relative;
             .imgzoom-main {
                 position: relative;
                 a {
@@ -115,20 +118,186 @@
                     background: #fede4f 50% top no-repeat;
                 }
             }
-            .imgzoom-thumb {
-                ul {
-                    @extend %cleafix;
-                    li {
-                        margin-right: 17px;
-                        float: left;
-                        img {
-                            width: 60px;
-                            height: 60px;
+            .imgzoom-thumb-w {
+                height: 64px;
+                position: relative;
+                margin: 5px 0;
+                .imgzoom-letf {
+                    background-position: -903px -656px;
+                    top: 24px;
+                    left: 0;
+                    width: 12px;
+                    height: 20px;
+                    z-index: 11;
+                    position: absolute;
+                    background-image: url(http://res.suning.cn/project/pdsWeb/csspc2017/images/f-icons-ex1.png?v=1599209773);
+                }
+                .imgzoom-right {
+                    width: 12px;
+                    height: 20px;
+                    top: 24px;
+                    right: 0;
+                    height: 20px;
+                    z-index: 11;
+                    position: absolute;
+                    background-position: -1042px -472px;
+                    background-image: url(http://res.suning.cn/project/pdsWeb/csspc2017/images/f-icons-ex1.png?v=1599209773);
+                }
+                .imgzoom-thumb {
+                    position: absolute;
+                    overflow: hidden;
+                    height: 64px;
+                    width: 392px;
+                    margin-left: 30px;
+                    ul {
+                        position: absolute;
+                        width: 800px;
+                        @extend %cleafix;
+                        li {
+                            margin-right: 17px;
+                            float: left;
+                            img {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+                        .cur {
+                            border: 2px solid #f50;
                         }
                     }
-                    .cur {
-                        border: 2px solid #f50;
+                }
+            }
+            .imgzoom-daf {
+                display: none;
+                width: 400px;
+                height: 400px;
+                border: 1px solid #eee;
+                position: absolute;
+                top: 0;
+                left: 450px;
+                overflow: hidden;
+                img {
+                    width: 800px;
+                    height: 800px;
+                    // display: none;
+                }
+            }
+        }
+        .proinfo-main {
+            float: left;
+            margin-left: 20px;
+            @extend %cleafix;
+            .proinfo-title {
+                span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-align: center;
+                    color: #fff;
+                    background-color: #f50;
+                    padding: 0 5px;
+                    margin-right: 5px;
+                }
+                h2 {
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                h3 {
+                    color: #f60;
+                    margin-top: 3px;
+                }
+            }
+            .price-container {
+                background: #fff8f3;
+                margin-top: 20px;
+                padding: 10px 0 100px 10px;
+                .price {
+                    >span {
+                        font-size: 12px;
+                        color: #999999;
+                        margin-right: 15px;
                     }
+                    p {
+                        display: inline-block;
+                        color: #e00;
+                        font-weight: bold;
+                        span {
+                            font-size: 30px;
+                        }
+                        i {
+                            font-size: 24px;
+                        }
+                        .fuhao {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .nums {
+                @extend %cleafix;
+                margin-top: 10px;
+                >span {
+                    height: 30px;
+                    line-height: 30px;
+                    float: left;
+                    font-size: 12px;
+                    color: #999999;
+                    margin-right: 15px;
+                    display: block;
+                    letter-spacing: 1em;
+                }
+                .cont {
+                    float: left;
+                    @extend %cleafix;
+                    display: block;
+                    .jian {
+                        float: left;
+                        width: 22px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        background: #cccccc;
+                        cursor: pointer;
+                    }
+                    input {
+                        float: left;
+                        outline: 0;
+                        width: 25px;
+                        height: 18px;
+                        padding: 5px;
+                        border: 1px solid #ddd;
+                        margin: 0 5px;
+                        text-align: center;
+                    }
+                    .jia {
+                        background: #cccccc;
+                        line-height: 30px;
+                        cursor: pointer;
+                        float: left;
+                        text-align: center;
+                        width: 22px;
+                        height: 30px;
+                    }
+                }
+            }
+            .mainbtns {
+                margin-top: 80px;
+                .nowbuy {
+                    font-weight: 600;
+                    background: #663200;
+                    color: #fff;
+                    width: 115px;
+                    height: 40px;
+                    border-color: #663200;
+                }
+                .togoodscart {
+                    background: #f50;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-color: #f50;
+                    width: 135px;
+                    height: 40px;
                 }
             }
         }

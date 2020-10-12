@@ -14,14 +14,14 @@ define([], function() {
                 //进行渲染结构代码。
                 let strhtml = '';
                 $.each(data, function(index, value) {
-                    console.log(value);
+                    // console.log(value);
                     strhtml += `
                     <li>
                     <div class="item-bg">
                         <div class="product-box">
                             <div class="res-img">
                                 <div class="img-block">
-                                    <a href="#">
+                                    <a href="detail.html?sid=${value.sid}" target="_blank">
                                         <img class="lazy" data-original="${value.url}" alt="">
                                     </a>
                                 </div>
@@ -114,7 +114,7 @@ define([], function() {
                                     <div class="product-box">
                                         <div class="res-img">
                                             <div class="img-block">
-                                                <a href="#">
+                                                <a href="detail.html?sid=${value.sid}">
                                                     <img class="lazy" data-original="${value.url}" alt="">
                                                 </a>
                                             </div>
