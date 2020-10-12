@@ -1,4 +1,4 @@
-.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .second-filter .second-up::after, .product-wrap .product-list .general li .item-bg .product-box .res-img .focus-box .focus-img dl::after, .product-wrap .product-list .general li .item-bg .product-box .res-info .evaluate-old::after, .product-wrap .product-list .general li .item-bg .product-box .res-opt::after, .pag::after {
+.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .second-filter .second-up::after, .proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul::after {
   content: '';
   clear: both;
   display: block; }
@@ -159,7 +159,7 @@
 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs {
   padding-left: 14px;
   overflow: hidden; }
-.ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .provinceShow, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .citybShow, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .nav-tabs .provinceShow, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .provinceShow, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .nav-tabs .citybShow, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .citybShow {
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .provinceShow, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .nav-tabs .citybShow {
   float: left;
   border: 1px solid #ededed;
   background: #fff;
@@ -179,17 +179,17 @@
   line-height: 16px; }
 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content {
   border-top: 1px solid #ededed; }
-.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content .tab-content1 .city, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .tab-content1 .city, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city {
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city {
   width: 370px; }
-.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content .tab-content1 .city > li, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .tab-content1 .city > li, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city > li, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city > li {
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li {
   display: inline-block;
   margin-top: 7px;
   width: 87px;
   height: 20px;
   text-align: center; }
-.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li p, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li p, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content .tab-content1 .city > li p, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .tab-content1 .city > li p, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city > li p, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city > li p {
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li p, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li p {
   display: inline-block; }
-.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li p a, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li p a, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content .tab-content1 .city > li p a, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .tab-content1 .city > li p a, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city > li p a, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city > li p a {
+.ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .province > li p a, .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content .city > li p a {
   color: #000;
   display: inline-block;
   height: 20px;
@@ -716,13 +716,13 @@
   float: left;
   margin-right: 8px; }
 
-.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .second-filter .second-up::after, .product-wrap .product-list .general li .item-bg .product-box .res-img .focus-box .focus-img dl::after, .product-wrap .product-list .general li .item-bg .product-box .res-info .evaluate-old::after, .product-wrap .product-list .general li .item-bg .product-box .res-opt::after, .pag::after {
+.ng-toolbar-con::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .brandList::after, .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box .index-sort-detail .actShow .actList::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .second-filter .second-up::after, .proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul::after {
   content: '';
   clear: both;
   display: block; }
 
 .wrapper {
-  width: 1390px;
+  width: 1190px;
   margin: 0 auto; }
 
 .ng-nav-bar .ng-nav-barV8 .index-sort .dacu-list-wrapper .index-sort-list-box {
@@ -735,349 +735,71 @@
 
 .second-filter .second-up {
   background: #f8f8fa;
-  line-height: 38px; }
-.second-filter .second-up .sort {
-  height: 38px;
-  line-height: 38px;
-  float: left;
-  background: #f8f8fa; }
-.second-filter .second-up .sort span a {
-  font-size: 12px;
-  padding: 0 20px; }
-.second-filter .second-up .sort span a .jx {
-  display: inline-block;
-  height: 12px;
-  width: 9px;
-  *margin-top: 2px;
-  background: url(http://res.suning.cn/project/search/searchpage_new/v1/images/icons.6f19b7390e36b3fcd4ba46694cb1f71c.png) no-repeat -220px -253px; }
-.second-filter .second-up .sort span a .price {
-  display: inline-block;
-  height: 16px;
-  width: 10px;
-  background: url(http://res.suning.cn/project/search/searchpage_new/v1/images/icons.6f19b7390e36b3fcd4ba46694cb1f71c.png) no-repeat -242px -202px; }
-.second-filter .second-up .price-interval {
-  float: left;
-  position: relative; }
-.second-filter .second-up .price-interval .interval-input input {
-  box-sizing: content-box;
-  padding: 0 4px 0 14px;
-  line-height: 24px;
-  border: 1px solid #E5E5E5;
-  border-radius: 2px;
-  height: 24px;
-  width: 36px;
-  background: #FFF url(http://res.suning.cn/project/search/searchpage_new/v1/images/icons.6f19b7390e36b3fcd4ba46694cb1f71c.png) no-repeat -186px -126px; }
-.second-filter .second-up .price-interval .interval-input .btn {
-  text-align: center;
-  display: none; }
-.second-filter .second-up .price-interval .interval-input .btn a {
-  display: inline-block;
-  width: 47px;
-  height: 24px;
-  line-height: 24px;
-  text-align: center;
-  border: 1px solid #E5E5E5;
-  color: #999;
-  background: #FFF;
-  border-radius: 2px; }
-.second-filter .second-up .price-interval .interval-input .btn .ensure-price {
-  margin-right: 15px; }
-.second-filter .second-up .price-interval .interval-input .btn .ensure-price:hover {
-  border: 1px solid #f80;
-  color: #f80; }
-.second-filter .second-up .price-interval .interval-input:hover {
-  height: 73px;
-  text-align: center;
-  position: absolute;
-  width: 130px;
-  top: 0;
-  left: 0;
-  padding: 0 7px;
-  background: #FFF;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 2px; }
-.second-filter .second-up .price-interval .interval-input:hover .btn {
-  display: block; }
-.second-filter .second-up .address1 {
-  float: left;
-  height: 38px;
-  margin-left: 18px;
-  position: absolute;
-  left: 518px; }
-.second-filter .second-up .address1 span {
-  font-size: 12px;
-  background: #fff; }
-.second-filter .second-up .address1 .add {
-  background: #fff;
-  border: 1px #ccc solid; }
-.second-filter .second-up .address1 .add span {
-  font-size: 12px; }
-.second-filter .second-up .address1 .sanjiao {
-  width: 0;
-  height: 0;
-  border-color: #bbb transparent transparent;
-  border-width: 6px 4px;
-  border-style: solid dashed dashed;
-  font-size: 0;
-  line-height: 0;
-  overflow: hidden;
-  margin: 0 5px 0 0; }
-.second-filter .second-up .address1 .ui-city-group {
-  background: #fff;
-  z-index: 99;
-  position: absolute;
-  border: black 1px solid;
-  display: none; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-close {
-  position: absolute;
-  right: 10px;
-  cursor: pointer; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content {
-  width: 370px;
-  background: #fff; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .nav-tabs {
-  padding-left: 14px;
-  overflow: hidden; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .nav-tabs .provinceShow, .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .nav-tabs .citybShow {
-  float: left;
-  border: 1px solid #ededed;
-  background: #fff;
-  margin-right: 6px;
-  cursor: pointer;
-  height: 26px;
-  text-align: center;
-  line-height: 26px; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .nav-tabs .provinceShow > p {
-  padding: 6px 15px 6px 15px; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .nav-tabs .citybShow > p {
-  padding: 6px 15px 6px 15px; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .nav-tabs a {
-  font-size: 12px;
-  color: #000000;
-  display: block;
-  line-height: 16px; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 {
-  border-top: 1px solid #ededed; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .province, .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .city {
-  width: 370px; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .province > li, .second-filter .second-up .address1 .ng-toolbar-left .address .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city > li, .ng-toolbar-left .address .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .tab-content .city > li, .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .city > li {
-  display: inline-block;
-  margin-top: 7px;
-  width: 87px;
-  height: 20px;
-  text-align: center; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .province > li p, .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .city > li p {
-  display: inline-block; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .province > li p a, .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .city > li p a {
-  color: #000;
-  display: inline-block;
-  height: 20px;
-  font-size: 12px;
   line-height: 20px;
-  padding: 0 4px;
-  cursor: pointer; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .province > li p a:hover, .second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .city > li p a:hover {
-  background: #ccc;
-  color: #fa0;
-  border-radius: 4px; }
-.second-filter .second-up .address1 .ui-city-group .ui-city-group-content .tab-content1 .city {
-  display: none; }
-.second-filter .second-up .promotion-label {
-  float: right; }
-.second-filter .second-up .promotion-label .label-box .lable {
-  float: left;
+  padding: 10px 0; }
+.second-filter .second-up a {
+  white-space: nowrap;
   font-size: 12px;
-  margin-right: 15px;
-  cursor: pointer; }
-.second-filter .second-up .promotion-label .label-box .lable input {
-  vertical-align: middle; }
-.second-filter .second-up .promotion-label .label-box .lable:hover {
-  color: #f80; }
-.second-filter .second-up .second-page {
-  float: right;
-  margin-right: 15px;
-  font-size: 12px; }
-.second-filter .second-up .second-page .f1 {
-  cursor: pointer; }
-.second-filter .second-up .second-page .f1 .cur {
-  color: #f80; }
-
-.product-wrap .product-list .general {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-.product-wrap .product-list .general li {
-  width: 240px;
-  padding: 10px;
-  margin-bottom: 15px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-img .img-block a img {
-  width: 240px;
-  height: 240px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-img .focus-box {
-  margin-top: 10px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-img .focus-box .focus-img dl dd {
+  color: #666;
   float: left; }
-.product-wrap .product-list .general li .item-bg .product-box .res-img .focus-box .focus-img dl dd a img {
-  width: 32px;
-  height: 32x; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .price-box {
-  margin-top: 10px;
-  width: 100%; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .price-box span {
-  color: #F60;
-  font-weight: bold;
-  font-size: 22px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .price-box span i {
+.second-filter .second-up a:hover {
+  color: #f60; }
+.second-filter .second-up .dropdown {
+  height: 18px;
+  float: left;
+  border: 1px solid #ddd;
+  color: #666;
   font-size: 12px;
-  margin-right: 3px;
-  font-family: arial; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .price-box span .price-bybt {
-  display: inline-block;
+  line-height: 18px;
+  position: relative;
+  cursor: pointer; }
+.second-filter .second-up .dropdown span {
+  padding: 0 20px 0 8px;
+  background: #fff; }
+.second-filter .second-up .dropdown i {
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 8px;
+  height: 4px;
+  background-image: url(http://res.suning.cn/project/pdsWeb/csspc2017/images/f-icons-ex1.png?v=1599209773);
+  background-position: -1064px -197px; }
+.second-filter .second-up .sep {
+  padding: 0 6px;
+  color: #bbb;
+  float: left; }
+.second-filter .second-up span {
+  float: left; }
+.second-filter .second-up span a {
+  white-space: nowrap;
+  font-size: 12px;
+  color: #666; }
+.second-filter .second-up span a:hover {
+  color: #f60;
+  text-decoration: underline; }
+
+.proinfo .proinfo-container .proinfo-left .imgzoom-main {
+  position: relative; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-main a img {
+  width: 450px;
+  height: 450px; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-main .imgzoom-xiaof {
+  position: absolute;
+  opacity: 0.5;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  cursor: move;
+  top: 0;
+  border: 1px solid #aaa;
+  background: #fede4f 50% top no-repeat; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul li {
+  margin-right: 17px;
+  float: left; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul li img {
   width: 60px;
-  height: 16px;
-  margin: 0 0 0 6px;
-  background: url(http://res.suning.cn/project/search/searchpage_new/v1/images/icons.6f19b7390e36b3fcd4ba46694cb1f71c.png) 0 -510px no-repeat; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .title-selling-point {
-  margin-top: 10px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .title-selling-point a {
-  font-size: 12px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .info-config {
-  margin-top: 10px;
-  font-size: 12px;
-  color: #999999; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .info-config i {
-  margin: 0 5px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .evaluate-old {
-  margin-top: 10px;
-  font-size: 12px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .evaluate-old .a1 {
-  float: left; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .evaluate-old .a1 i {
-  font-weight: bold;
-  color: #2272c8; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .evaluate-old .a2 {
-  color: #2272c8;
-  float: right; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .store-stock {
-  margin-top: 10px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .store-stock p {
-  color: #F60;
-  font-size: 12px;
-  padding: 2px 4px;
-  border: 1px solid #F60;
-  border-radius: 2px;
-  display: inline-block; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .sales-label {
-  margin-top: 10px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-info .sales-label span {
-  padding: 3px 4px;
-  font-size: 12px;
-  color: #FFF;
-  border-radius: 2px;
-  background: #F60; }
-.product-wrap .product-list .general li .item-bg .product-box .res-opt {
-  margin-top: 10px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-opt a {
-  float: left;
-  font-size: 12px;
-  display: block;
-  background-color: #FFF;
-  padding: 8px 16px;
-  border-left: 1px solid #EEE;
-  border-top: 1px solid #EEE;
-  border-bottom: 1px solid #EEE; }
-.product-wrap .product-list .general li .item-bg .product-box .res-opt a i {
-  display: inline-block;
-  margin: 0 2px 0 0;
-  vertical-align: middle;
-  overflow: hidden;
-  width: 12px;
-  height: 12px;
-  background: url(http://res.suning.cn/project/search/searchpage_new/v1/images/icons.6f19b7390e36b3fcd4ba46694cb1f71c.png) no-repeat; }
-.product-wrap .product-list .general li .item-bg .product-box .res-opt a:hover {
-  background-color: #ccc; }
-.product-wrap .product-list .general li .item-bg .product-box .res-opt .duibi i {
-  background-position: -40px -258px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-opt .guanzhu i {
-  background-position: -259px -212px; }
-.product-wrap .product-list .general li .item-bg .product-box .res-opt .gouwuc {
-  border-right: 1px solid #EEE; }
-.product-wrap .product-list .general li .item-bg .product-box .res-opt .gouwuc i {
-  background-position: -135px -208px; }
-.product-wrap .product-list .general li:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px; }
+  height: 60px; }
+.proinfo .proinfo-container .proinfo-left .imgzoom-thumb ul .cur {
+  border: 2px solid #f50; }
 
-.pag {
-  margin-bottom: 100px; }
-.pag .pagelist {
-  clear: both;
-  width: 1170px;
-  margin: 0 auto;
-  text-align: right;
-  padding-right: 20px; }
-.pag .m-style {
-  float: right;
-  text-align: center; }
-.pag .m-style:before, .pag .m-style:after {
-  content: "";
-  display: table; }
-.pag .m-style:after {
-  clear: both;
-  overflow: hidden; }
-.pag .m-style span {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  color: #bdbdbd;
-  font-size: 14px; }
-.pag .m-style .active {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  background: #e91e63;
-  color: #fff;
-  font-size: 14px;
-  border: 1px solid #e91e63; }
-.pag .m-style a {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  background: #fff;
-  border: 1px solid #ebebeb;
-  color: #bdbdbd;
-  font-size: 14px; }
-.pag .m-style a:hover {
-  color: #fff;
-  background: #e91e63; }
-.pag .m-style .next, .pag .m-style .prev {
-  font-family: "Simsun";
-  font-size: 16px;
-  font-weight: bold;
-  width: 80px; }
-.pag .now, .pag .count {
-  padding: 0 5px;
-  color: #f00; }
-.pag .eg img {
-  max-width: 800px;
-  min-height: 500px; }
-.pag input {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  text-align: center;
-  background: #fff;
-  border: 1px solid #ebebeb;
-  outline: none;
-  color: #bdbdbd;
-  font-size: 14px; }
-
-/*# sourceMappingURL=list.css.map */
+/*# sourceMappingURL=detail.css.map */

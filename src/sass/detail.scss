@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import "top";
+@import "subnav";
+@import "footer";
+%cleafix::after {
+    //被继承的代码不会编码
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.wrapper {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+//二级导航
+.ng-nav-bar {
+    .ng-nav-barV8 {
+        .index-sort {
+            .dacu-list-wrapper {
+                .index-sort-list-box {
+                    height: 0px;
+                    overflow: hidden;
+                    transition: all .3s;
+                }
+            }
+        }
+        .index-sort:hover .index-sort-list-box {
+            height: 476px;
+            overflow: visible;
+        }
+    }
+}
+
+.second-filter {
+    .second-up {
+        background: #f8f8fa;
+        @extend %cleafix;
+        line-height: 20px;
+        padding: 10px 0;
+        a {
+            white-space: nowrap;
+            font-size: 12px;
+            color: #666;
+            float: left;
+        }
+        a:hover {
+            color: #f60;
+        }
+        .dropdown {
+            height: 18px;
+            float: left;
+            border: 1px solid #ddd;
+            color: #666;
+            font-size: 12px;
+            line-height: 18px;
+            position: relative;
+            cursor: pointer;
+            span {
+                padding: 0 20px 0 8px;
+                background: #fff;
+            }
+            i {
+                position: absolute;
+                top: 7px;
+                right: 6px;
+                width: 8px;
+                height: 4px;
+                background-image: url(http://res.suning.cn/project/pdsWeb/csspc2017/images/f-icons-ex1.png?v=1599209773);
+                background-position: -1064px -197px;
+            }
+        }
+        .sep {
+            padding: 0 6px;
+            color: #bbb;
+            float: left;
+        }
+        span {
+            float: left;
+            a {
+                white-space: nowrap;
+                font-size: 12px;
+                color: #666;
+            }
+            a:hover {
+                color: #f60;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//放大镜
+.proinfo {
+    .proinfo-container {
+        .proinfo-left {
+            .imgzoom-main {
+                position: relative;
+                a {
+                    img {
+                        width: 450px;
+                        height: 450px;
+                    }
+                }
+                .imgzoom-xiaof {
+                    position: absolute;
+                    opacity: 0.5;
+                    width: 200px;
+                    height: 200px;
+                    z-index: 1;
+                    cursor: move;
+                    top: 0;
+                    border: 1px solid #aaa;
+                    background: #fede4f 50% top no-repeat;
+                }
+            }
+            .imgzoom-thumb {
+                ul {
+                    @extend %cleafix;
+                    li {
+                        margin-right: 17px;
+                        float: left;
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                    .cur {
+                        border: 2px solid #f50;
+                    }
+                }
+            }
+        }
+    }
+}
