@@ -1,0 +1,229 @@
+@charset "utf-8";
+@import "top";
+@import "footer";
+%cleafix::after {
+    //被继承的代码不会编码
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.wrapper {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.cart-wrapper {
+    .m-cart-header {
+        border: 1px solid #ddd;
+        @extend %cleafix;
+        .fudong {
+            float: left;
+            font-size: 12px;
+            color: #666666;
+        }
+        .xuanz {
+            width: 250px;
+            vertical-align: middle;
+            input {
+                vertical-align: middle;
+            }
+        }
+        .info {
+            width: 218px;
+        }
+        .guige {
+            width: 145px;
+        }
+        .th-price {
+            width: 153px;
+        }
+        .th-amount {
+            width: 130px;
+        }
+        .th-nums {
+            width: 190px;
+        }
+        .th-op {
+            width: 100px;
+        }
+    }
+    .cart-list {
+        margin-top: 30px;
+        ul {
+            li {
+                background-color: #fffbf2;
+                border: 1px solid #ddd;
+                @extend %cleafix;
+                padding: 15px 10px;
+                .fudong {
+                    float: left;
+                    font-size: 12px;
+                    color: #666666;
+                }
+                input {
+                    margin-left: 10px;
+                }
+                .td-item {
+                    margin-left: 10px;
+                    @extend %cleafix;
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        float: left;
+                    }
+                    .item-c {
+                        float: left;
+                        display: block;
+                        margin-left: 25px;
+                        width: 240px;
+                        h3 {
+                            font-size: 12px;
+                        }
+                        h3:hover {
+                            color: #f70;
+                        }
+                    }
+                }
+                .td-specs {
+                    margin-left: 65px;
+                }
+                .td-price {
+                    margin-left: 90px;
+                    width: 65px;
+                    text-align: center;
+                    .price-line {
+                        color: #333333;
+                    }
+                    .icon-promo-price {
+                        background: #fff6ef;
+                        border-radius: 2px;
+                        color: #f60;
+                        text-align: center;
+                        padding: 2px 5px;
+                        margin: 2px 0 0;
+                    }
+                }
+                .td-sum {
+                    margin-left: 60px;
+                    color: #333333;
+                    font-weight: bold;
+                }
+                .td-op {
+                    margin-left: 136px;
+                    a {
+                        color: #666666;
+                    }
+                    a:hover {
+                        color: #f60;
+                    }
+                }
+                .nums {
+                    margin-left: 68px;
+                    @extend %cleafix;
+                    >span {
+                        height: 30px;
+                        line-height: 30px;
+                        float: left;
+                        font-size: 12px;
+                        color: #999999;
+                        margin-right: 15px;
+                        display: block;
+                        letter-spacing: 1em;
+                    }
+                    .cont {
+                        float: left;
+                        @extend %cleafix;
+                        display: block;
+                        .jian {
+                            float: left;
+                            width: 22px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            background: #cccccc;
+                            cursor: pointer;
+                        }
+                        input {
+                            float: left;
+                            outline: 0;
+                            width: 25px;
+                            height: 18px;
+                            padding: 5px;
+                            border: 1px solid #ddd;
+                            margin: 0 5px;
+                            text-align: center;
+                        }
+                        .jia {
+                            background: #cccccc;
+                            line-height: 30px;
+                            cursor: pointer;
+                            float: left;
+                            text-align: center;
+                            width: 22px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cart-toolbar-box {
+        border: 1px solid #ddd;
+        margin: 15px 0;
+        position: relative;
+        height: 40px;
+        line-height: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        @extend %cleafix;
+        .fudong {
+            float: left;
+            font-size: 12px;
+            color: #666666;
+        }
+        label {
+            margin-right: 40px;
+            cursor: pointer;
+            input {
+                margin-right: 10px;
+            }
+        }
+        .del {
+            margin-right: 600px;
+        }
+        .now-select-goods {
+            margin-right: 24px;
+            padding-right: 15px;
+            border-right: 1px solid #ddd;
+            b {
+                color: #f60;
+            }
+        }
+        .sn-sum-price {
+            p {
+                b {
+                    color: #f60;
+                    em {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        .sn-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 120px;
+            height: 61px;
+            line-height: 61px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            background-color: #f60;
+            border: 0;
+        }
+    }
+}

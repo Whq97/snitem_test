@@ -236,6 +236,7 @@ define([], function() {
                     this.timer = null;
                 }
                 init() {
+                    // console.log($('.banner-nav a'));
                     // console.log(this.lunbo);
                     // console.log(this.piclist);
                     // console.log(this.btnlist);

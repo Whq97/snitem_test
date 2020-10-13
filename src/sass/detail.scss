@@ -303,3 +303,57 @@
         }
     }
 }
+
+//弹出框
+.m-dialog {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 430px;
+    height: 123px;
+    .container {
+        border: rgba(0, 0, 0, 0.2) solid 3px;
+        background: #fff;
+        .title {
+            @extend %cleafix;
+            border-bottom: 1px solid #ccc;
+            background: #eee;
+            h2 {
+                float: left;
+                padding-left: 10px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .t-close {
+                float: right;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+        .context {
+            @extend %cleafix;
+            margin-left: 10px;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            p {
+                float: left;
+                font-size: 16px;
+                height: 30px;
+                line-height: 30px;
+            }
+            .toc {
+                float: left;
+                font-size: 14px;
+                color: #fff;
+                background: #f50;
+                border-radius: 2px;
+                padding: 5px;
+                margin-left: 150px;
+            }
+        }
+    }
+}

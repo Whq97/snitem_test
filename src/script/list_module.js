@@ -89,9 +89,9 @@ define([], function() {
                     array[index] = $(this);
                     array_default[index] = $(this);
                 });
-                //2.分页思路:根据传输的页码，后端返回对应的接口数据，渲染出来。
 
             });
+            //2.分页思路:根据传输的页码，后端返回对应的接口数据，渲染出来。-240px -228px;
             $('#page').pagination({
                 pageCount: 5, //总的页数
                 jump: true, //是否开启跳转到指定的页数，布尔值。
@@ -114,7 +114,7 @@ define([], function() {
                                     <div class="product-box">
                                         <div class="res-img">
                                             <div class="img-block">
-                                                <a href="detail.html?sid=${value.sid}">
+                                                <a href="detail.html?sid=${value.sid}" target="_blank">
                                                     <img class="lazy" data-original="${value.url}" alt="">
                                                 </a>
                                             </div>
@@ -179,42 +179,57 @@ define([], function() {
                             effect: "fadeIn" //图片显示方式
                         });
 
-
                         //将页面的li元素加载到两个数组中
+                        array_default = []; //排序前的li数组
+                        array = []; //排序中的数组
+                        prev = null;
+                        next = null;
+                        // console.log(flag);
+                        flag = -1;
                         $('.product-list .general li').each(function(index, element) {
                             array[index] = $(this);
                             array_default[index] = $(this);
                         });
+                        $('.second-up .sort .price').css("background-position", "-67px -374px");
                     });
                 }
 
             });
             //3.排序，排序前的数组都已经具有li元素
-            // 默认
+            // 默认-67px -375px
+            var flag = 1;
             $('.sort span').eq(0).on('click', function() {
+                flag *= -1;
+                $('.second-up .sort .price').css("background-position", "-67px -374px");
                 $.each(array_default, function(index, value) {
                     $('.product-list .general').append(value);
                 });
                 return;
             });
+            // $('.product-list .general li').each(function(index, element) {
+            //     array[index] = $(this);
+            //     array_default[index] = $(this);
+            // });
             // 升序
-            let flag = 1;
+
             $('.sort span').eq(3).on('click', function() {
                 flag *= -1;
-                console.log(1);
                 for (let i = 0; i < array.length - 1; i++) {
                     for (let j = 0; j < array.length - i - 1; j++) {
                         prev = parseInt(array[j].find('.price-box span em').html()); //取上个价格
                         next = parseInt(array[j + 1].find('.price-box span em').html()); //下一个的价格
-                        console.log(prev, next);
+                        // console.log(prev, next);
                         //通过价格的判断，改变的是数组li的位置。
                         if (flag > 0) {
+                            $('.second-up .sort .price').css("background-position", "-28px -374px");
+                            console.log($('.second-up .sort .price'));
                             if (prev > next) {
                                 let temp = array[j];
                                 array[j] = array[j + 1];
                                 array[j + 1] = temp;
                             }
                         } else {
+                            $('.second-up .sort .price').css("background-position", "-48px -374px");
                             if (prev < next) {
                                 let temp = array[j];
                                 array[j] = array[j + 1];
@@ -224,11 +239,13 @@ define([], function() {
 
                     }
                 }
-
+                $('.list ul').empty(); //清空原来的列表
                 $.each(array, function(index, value) {
                     $('.product-list .general').append(value);
                 });
             });
+            flag = -1;
+
         }()
     }
 })

@@ -29,7 +29,7 @@ define([], function() {
                 $.each(picarr, function(index, value) {
                     strhtml += `
                         <li class="cur">
-                            <a href="#">
+                            <a href="javascript:;">
                             <img src="${value}" alt="">
                             </a>
                         </li>`;
@@ -119,7 +119,7 @@ define([], function() {
                     arrnum = [];
                 }
             }
-            let num = $('#count').val();
+            var num = $('#count').val();
             $('.jia').on('click', function() {
                 num++;
                 $('#count').val(num);
@@ -153,8 +153,53 @@ define([], function() {
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' }); //一起存入cookie
                 }
 
-                alert('按钮被点击了');
+                $('.m-dialog').css('display', 'block');
+                $('.t-close').on('click', function() {
+                    $('.m-dialog').css('display', 'none');
+                })
             });
+
+            $('.imgzoom-thumb ul').on('click', '.imgzoom-thumb ul li', function() {
+                console.log(1);
+                console.log($(this).attr('src'));
+            })
+
+            //小图运动
+            $('.imgzoom-letf').on('click', function() {
+                var juli = parseInt($('.imgzoom-thumb ul').css("left"));
+                console.log(1);
+                juli -= 85;
+
+
+                if (juli >= -290) {
+                    $('.imgzoom-thumb ul').stop(true).animate({
+                        left: juli
+                    }, 1000);
+                    // juli = -330
+                }
+            })
+            console.log(parseInt($('.imgzoom-thumb ul').css("left")));
+
+            $('.imgzoom-right').on('click', function() {
+                var juli1 = parseInt($('.imgzoom-thumb ul').css("left"));
+                console.log(1);
+                juli1 += 85;
+                if (juli1 >= 0) {
+                    juli1 = 0
+                    $('.imgzoom-thumb ul').stop(true).animate({
+                        left: juli1
+                    }, 1000);
+                    // juli1 = 0
+                    // $('.imgzoom-thumb ul').css("left", '0');
+                } else {
+                    $('.imgzoom-thumb ul').stop(true).animate({
+                        left: juli1
+                    }, 1000);
+                }
+
+
+
+            })
         }()
     }
 })
