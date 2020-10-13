@@ -137,6 +137,13 @@
     border: 1px solid #ddd;
     border-top: 3px solid #f90;
     padding: 50px 0;
+    position: relative;
+    .lo {
+        position: absolute;
+        top: -25px;
+        right: 0;
+        color: #f90;
+    }
     .reg-form {
         margin: 0 auto;
         width: 380px;

@@ -11,7 +11,7 @@ define([], function() {
             }
             // 2.将获取sid传给后端，后端获取sid，将对应的数据返回给前端。
             $.ajax({
-                url: 'http://192.168.11.7/js/suningitem_test/php/getsid.php',
+                url: 'http://10.31.163.207/js/suningitem_test/php/getsid.php',
                 data: {
                     datasid: sid
                 },
@@ -200,6 +200,11 @@ define([], function() {
 
 
             })
+        }(),
+        login: ! function() {
+            if (sessionStorage.getItem('username')) {
+                $('.loginname').html('亲爱的' + sessionStorage.getItem('username') + '用户');
+            }
         }()
     }
 })

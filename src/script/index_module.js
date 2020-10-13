@@ -3,7 +3,7 @@ define([], function() {
         render: ! function() { //渲染
             let list = $('.tab-content ul');
             $.ajax({
-                url: 'http://192.168.11.7/js/suningitem_test/php/taobaodata.php',
+                url: 'http://10.31.163.207/js/suningitem_test/php/taobaodata.php',
                 dataType: 'json'
             }).done(function(data) {
                 //进行渲染结构代码。
@@ -357,6 +357,11 @@ define([], function() {
 
             }
             new Taobao().init();
-        }
+        },
+        login: ! function() {
+            if (sessionStorage.getItem('username')) {
+                $('.loginname').html('亲爱的' + sessionStorage.getItem('username') + '用户');
+            }
+        }()
     }
 });

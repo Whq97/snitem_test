@@ -21,32 +21,115 @@ define([], function() {
             })
         }(),
         yanzheng: ! function() {
-            let $user = $('.phone');
+            let $user = $('#phone');
             let $usernameflag = true;
+            var passflag = true;
             $user.on('blur', function() {
                 $.ajax({
                     type: 'post',
-                    url: 'http://192.168.11.7/js/suningitem_test/php/registry.php',
+                    url: 'http://10.31.163.207/js/suningitem_test/php/registry.php',
                     data: {
                         username: $user.val()
                     }
                 }).done(function(result) {
-                    if (!result) { //不存在
-                        $('span').html('√').css('color', 'green');
-                        $usernameflag = true;
+                    if ($('#phone').val() !== '') {
+                        if (!result) { //不存在
+                            var reg = /^1[3578]\d{9}$/;
+                            if (reg.test($('#phone').val())) {
+                                $('.ok').show();
+                                $('.phone-field .aliasTip').html('验证完成后可以使用该手机登录或找回密码').css('color', '#ccc');
+                                $usernameflag = true;
+
+                            } else {
+                                $('.phone-field .aliasTip').html('该手机号格式有误').css('color', 'red');
+                                $('.ok').hide();
+                                $usernameflag = false;
+                            }
+                            $usernameflag = true;
+                        } else {
+                            $('.phone-field .aliasTip').html('该手机号已经注册').css('color', 'red');
+                            $('.ok').hide();
+                            $usernameflag = false;
+                        }
                     } else {
-                        $('span').html('该用户名已经存在').css('color', 'red');
+                        $('.phone-field .aliasTip').html('手机号不能为空').css('color', 'red');
+                        $('.ok').hide();
                         $usernameflag = false;
                     }
                 })
             });
+            $('#password').on('input', function() {
+                if ($(this).val().length >= 8 && $(this).val().length <= 20) {
+                    $('.password-field .aliasTip').hide();
+                    $('.security-level').show();
+                    var regnum = /\d+/g;
+                    var reglower = /[a-z]+/g;
+                    var regupper = /[A-Z]+/g;
+                    var other = /[\W\_]+/g;
+                    var count = 0; //统计字符的种类
+                    if (regnum.test($(this).val())) {
+                        count++;
+                    }
+
+                    if (reglower.test($(this).val())) {
+                        count++;
+                    }
+
+                    if (regupper.test($(this).val())) {
+                        count++;
+                    }
+
+                    if (other.test($(this).val())) {
+                        count++;
+                    }
+                    switch (count) {
+                        case 1:
+                            $('.level1').css('background', '#fa0');
+                            $('.level2').css('background', '#cacaca');
+                            $('.level3').css('background', '#cacaca');
+                            passflag = false;
+                            break;
+                        case 2:
+                        case 3:
+                            $('.level1').css('background', '#cacaca');
+                            $('.level2').css('background', '#fa0');
+                            $('.level3').css('background', '#cacaca');
+                            passflag = true;
+                            break;
+                        case 4:
+                            $('.level1').css('background', '#cacaca');
+                            $('.level2').css('background', '#cacaca');
+                            $('.level3').css('background', '#fa0');
+                            passflag = true;
+                            break;
+                    }
+                } else {
+                    $('.password-field .aliasTip').html('密码长度有问题').css('color', 'red');
+                    $('.password-field .aliasTip').show();
+                    passflag = false;
+                }
+            })
+
+            $('#password').on('blur', function() {
+                if ($('#password').val() !== '') {
+                    if (passflag) {
+                        $('.password-field .aliasTip').hide();
+                    }
+                } else {
+                    $('.password-field .aliasTip').html('密码不能为空').css('color', 'red');
+                }
+            })
 
             $('form').on('submit', function() {
                 if ($user.val() == '') {
-                    $('span').html('用户名不能为空').css('color', 'red');
+                    $('.phone-field .aliasTip').html('手机号不能为空').css('color', 'red');
                     $usernameflag = false;
                 }
-                if (!$usernameflag) {
+                if ($('#password').val() == '') {
+                    $('.password-field .aliasTip').html('密码不能为空').css('color', 'red');
+                    passflag = false;
+                }
+                if (!$usernameflag || !passflag) {
                     return false; //阻止提交
                 }
             });

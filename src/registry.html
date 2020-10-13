@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="main wrapper">
-        <form action="">
+        <form action="http://10.31.163.207/js/suningitem_test/php/registry.php" method="POST">
             <div class="reg-form">
                 <div class="phone-field">
                     <div class="input-box">
@@ -30,21 +30,21 @@
                         <div class="phone-box">
                             <input type="text" name="phone" id="phone">
                             <label for="" class="placeholder">建议使用常用的手机号</label>
-                            <i class="ok"></i>
+                            <i class="ok" style="display: none;"></i>
                         </div>
                     </div>
                     <div class="aliasTip">验证完成后可以使用该手机登录或找回密码</div>
                 </div>
-                <div class="password-field">
+                <div class="password-field" style="height: 92px;">
                     <div class="input-box">
                         <label class="title">设置密码</label>
                         <div class="phone-box">
-                            <input type="text" name="" id="">
+                            <input type="password" name="password" id="password">
                             <label for="" class="placeholder">请输入密码</label>
                         </div>
                     </div>
                     <div class="aliasTip">8-20个字符，由字母，数字和符号的两种以上组合。</div>
-                    <div class="security-level">
+                    <div class="security-level" style="display: none;">
                         <span>安全程度：</span>
                         <span class="level level1">低</span>
                         <span class="level level2">中</span>
@@ -56,6 +56,7 @@
                 </p>
             </div>
         </form>
+        <a href="login.html" class="lo">我已经注册，马上登录></a>
     </div>
     <!-- 底部 -->
     <div class="ng-footer">

@@ -8,7 +8,7 @@ define([], function() {
             let prev = null; //前一个商品价格
             let next = null; //后一个商品价格
             $.ajax({
-                url: 'http://192.168.11.7/js/suningitem_test/php/listdata.php',
+                url: 'http://10.31.163.207/js/suningitem_test/php/listdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 //进行渲染结构代码。
@@ -100,7 +100,7 @@ define([], function() {
                 callback: function(api) {
                     console.log(api.getCurrent()); //获取当前的点击的页码。
                     $.ajax({
-                        url: 'http://192.168.11.7/js/suningitem_test/php/listdata.php',
+                        url: 'http://10.31.163.207/js/suningitem_test/php/listdata.php',
                         data: {
                             page: api.getCurrent() //传输数据
                         },
@@ -246,6 +246,11 @@ define([], function() {
             });
             flag = -1;
 
+        }(),
+        login: ! function() {
+            if (sessionStorage.getItem('username')) {
+                $('.loginname').html('亲爱的' + sessionStorage.getItem('username') + '用户');
+            }
         }()
     }
 })

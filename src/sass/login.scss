@@ -209,6 +209,12 @@
                     margin-top: 20px;
                     @extend .username-box;
                     .input-box {
+                        #password {
+                            width: 100%;
+                            height: 100%;
+                            border: 0;
+                            font-size: 14px;
+                        }
                         .username-icon {
                             background: url(https://res.suning.cn/project/passport/login/b2c_V7/image/sprite.png?v=1541648459319) 0 -108px no-repeat;
                         }

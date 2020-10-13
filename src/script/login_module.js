@@ -7,7 +7,7 @@ define([], function() {
                 $('.username-box #userName').focus();
             })
             $('.password-box').on('click', function() {
-                console.log(1);
+                // console.log(1);
                 $('.password-box .placehode').hide();
                 $('.password-box #userName').focus();
             })
@@ -48,6 +48,28 @@ define([], function() {
             $('.password-box .clear').on('click', function() {
                 $('.password-box #userName').val('');
                 $('.password-box .clear').hide();
+            })
+        }(),
+        yanzheng: ! function() {
+            $('.yhbtn .btn').on('click', function() {
+                console.log(1);
+                $.ajax({
+                    type: 'post',
+                    url: 'http://10.31.163.207/js/suningitem_test/php/login.php',
+                    data: {
+                        user: $('#userName').val(),
+                        pass: hex_sha1($('#password').val())
+                    }
+                }).done(function(result) {
+                    if (result) {
+                        // console.log(1);
+                        location.href = "index1.html";
+                        window.sessionStorage.username = $('#userName').val();
+                    } else {
+                        // $('.password').val('');
+                        alert('用户名或者密码错误');
+                    }
+                });
             })
         }()
     }

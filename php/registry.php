@@ -15,10 +15,9 @@ if (isset($_POST['username'])) {
 
 //接收前端表单提交的数据
 if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
+    echo 111;
+    $username = $_POST['phone'];
     $password = sha1($_POST['password']);
-    $repass = sha1($_POST['repass']);
-    $email = $_POST['email'];
-    $conn->query("insert registry1 values(null,'$username','$password',NOW())");
-    header('location:http://localhost/NZ_1903/nz1903item/src/html/login.html');
+    $conn->query("insert registry1 values(default,'$username','$password',NOW())");
+    header('location:http://10.31.163.207/js/suningitem_test/src/login.html');
 }

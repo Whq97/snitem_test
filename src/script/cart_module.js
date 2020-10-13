@@ -15,13 +15,14 @@ define([], function() {
             function rendercart(sid, num) { //sid:渲染的商品编号    num:渲染的商品的数量。
                 console.log(parseInt(num));
                 $.ajax({
-                    url: 'http://192.168.11.7/js/suningitem_test/php/taobaodata.php',
+                    url: 'http://10.31.163.207/js/suningitem_test/php/taobaodata.php',
                     dataType: 'json'
                 }).done(function(data) {
                     $.each(data, function(index, value) {
                         // console.log(value);
                         if (value.sid == sid) { //数据接口的sid和当前商品的sid进行比较，如果相等，直接赋值。
-                            let strhtml = '';
+                            var strhtml = '';
+                            // strhtml += ' <li class="'+sid+'"><input type="checkbox" name="" id="sel-check" class="fudong"><div class="td-item fudong"><div class="td-item fudong"><div class="td-item fudong"><img src="'+value.url+'" alt=""><a class="item-c" href="#"><h3>'+value.title+'</h3></a></div><div class="td-specs fudong"><p>颜色：白色</p><p>规格：128G</p></div><div class="td-price fudong"><div class="price-line "><i>¥</i><em>'+value.price+'</em></div><div class="icon-promo-price ">'+value.activity+'</div></div><div class="nums fudong"><div class="cont"><button class="jian">-</button><input type="text" name="" id="count" value="'+parseInt(num)+'"><button class="jia">+</button></div></div><div class="td-sum fudong"><i>¥</i><em>'+(value.price*num).toFixed(2)+'</em></div><div class="td-op fudong"><a href="javascript:;">删除</a></div></li>';
                             strhtml += `
                                 <li class="${sid}">
                                 <input type="checkbox" name="" id="sel-check" class="fudong">
@@ -30,33 +31,12 @@ define([], function() {
                                     <a class="item-c" href="#">
                                         <h3>${value.title}</h3>
                                     </a>
-                                </div>
-                                <div class="td-specs fudong">
-                                    <p>颜色：白色</p>
-                                    <p>规格：128G</p>
-                                </div>
-                                <div class="td-price fudong">
-                                    <div class="price-line ">
-                                        <i>¥</i>
+                                </div><div class="td-specs fudong"><p>颜色：白色</p><p>规格：128G</p></div><div class="td-price fudong"><div class="price-line "><i>¥</i>
                                         <em>${value.price}</em>
-                                    </div>
-                                    <div class="icon-promo-price ">${value.activity}</div>
-                                </div>
-                                <div class="nums fudong">
-                                    <div class="cont">
-                                        <button class="jian">-</button>
-                                        <input type="text" name="" id="count" value="${parseInt(num)}">
-                                        <button class="jia">+</button>
-                                    </div>
-                                </div>
-                                <div class="td-sum fudong">
-                                    <i>¥</i>
-                                    <em>${(value.price*num).toFixed(2)}</em>
-                                </div>
-                                <div class="td-op fudong">
-                                    <a href="javascript:;">删除</a>
-                                </div>
-                            </li>`;
+                                    </div><div class="icon-promo-price ">${value.activity}</div>
+</div><div class="nums fudong"><div class="cont"><button class="jian">-</button><input type="text" name="" id="count" value="${parseInt(num)}">
+                                        <button class="jia">+</button></div></div><div class="td-sum fudong"><i>¥</i><em>${(value.price*num).toFixed(2)}</em>
+                                </div><div class="td-op fudong"><a href="javascript:;">删除</a></div></li>`;
 
                             $('.cart-list ul').append(strhtml);
                             // console.log($('.cart-list ul li').children('#sel-check').prop('checked'));
@@ -94,6 +74,7 @@ define([], function() {
             $('.cart-list ul').on('click', '.jia', function() {
                 console.log(1);
                 var s_sid = $(this).parent(".cont").parent(".nums").parent("li").attr("class");
+                console.log($(this).parent(".cont").parent(".nums").parent("li"));
                 console.log(s_sid);
                 var nums = $(this).siblings("#count").val();
                 nums++;
@@ -109,6 +90,7 @@ define([], function() {
                 // console.log(arrsid);
                 // console.log(arrnum);
                 var index = $.inArray(s_sid, arrsid); //sid在数组中的位置
+                console.log(index);
                 arrnum[index] = parseInt(nums); //原来的数量+新添加数量进行赋值
                 $.cookie('cookienum', arrnum, { expires: 10, path: '/' }); //一起存入cookie
                 calcprice()
@@ -117,7 +99,7 @@ define([], function() {
                 // console.log(2);
                 var nums = $(this).siblings("#count").val();
                 var s_sid = $(this).parent(".cont").parent(".nums").parent("li").attr("class");
-                console.log(s_sid);
+                // console.log(s_sid);
                 nums--;
                 if (nums <= 1) {
                     nums = 1;
@@ -210,16 +192,16 @@ define([], function() {
 
             // $.cookie('cookienum', arrnum, { expires: 10, path: '/' }); //插件完成的cookie的添加。
             function getcookie() {
-                if ($.cookie('cookiesid') && $.cookie('cookienum')) { //cookie存在
-                    arrsid = $.cookie('cookiesid').split(','); //获取cookie的sid，存放到数组中。
-                    arrnum = $.cookie('cookienum').split(','); //获取cookie的数量，存放到数组中。
-                    // status = $.cookie('cookiesta').split(','); //获取cookie的数量，存放到数组中。
-                } else { //cookie不存在
-                    arrsid = [];
-                    arrnum = [];
-                    // status = [];
-                    // }
-                }
+                // if ($.cookie('cookiesid') && $.cookie('cookienum')) { //cookie存在
+                arrsid = $.cookie('cookiesid').split(','); //获取cookie的sid，存放到数组中。
+                arrnum = $.cookie('cookienum').split(','); //获取cookie的数量，存放到数组中。
+                // status = $.cookie('cookiesta').split(','); //获取cookie的数量，存放到数组中。
+                // } else { //cookie不存在
+                // arrsid = [];
+                // arrnum = [];
+                // status = [];
+                // }
+                // }
             }
 
             //删除
@@ -265,6 +247,11 @@ define([], function() {
                 }
             })
 
+        }(),
+        login: ! function() {
+            if (sessionStorage.getItem('username')) {
+                $('.loginname').html('亲爱的' + sessionStorage.getItem('username') + '用户');
+            }
         }()
     }
 })

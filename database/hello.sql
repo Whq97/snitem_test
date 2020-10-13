@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50508
 File Encoding         : 65001
 
-Date: 2020-10-14 08:24:12
+Date: 2020-10-14 19:16:25
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -60,6 +60,22 @@ INSERT INTO `registry` VALUES ('3', 'wangwu', '356a192b7913b04c54574d18c28d46e63
 INSERT INTO `registry` VALUES ('6', '张三feng', '356a192b7913b04c54574d18c28d46e6395428ab', 'ww@w.w', '2020-09-17 21:12:25');
 INSERT INTO `registry` VALUES ('18', '傻逼', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'ww@w.w', '2020-09-21 09:36:34');
 INSERT INTO `registry` VALUES ('19', '123', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '123', '2020-09-21 10:13:25');
+
+-- ----------------------------
+-- Table structure for `registry1`
+-- ----------------------------
+DROP TABLE IF EXISTS `registry1`;
+CREATE TABLE `registry1` (
+  `username` varchar(20) DEFAULT NULL,
+  `password` varchar(40) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  `sid` tinyint(3) NOT NULL,
+  PRIMARY KEY (`sid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of registry1
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `taobaogoods`
