@@ -1,0 +1,256 @@
+.ng-footer .ng-ser-box {
+  background: #f5f5f5;
+  border-top: 1px solid #e7e7e7;
+  padding-bottom: 20px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise {
+  border-bottom: 1px solid #eaeaea;
+  padding: 12px 0; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl {
+  padding-bottom: 20px;
+  width: 238px;
+  float: left; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dt {
+  float: left; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dt a img {
+  width: 48px;
+  height: 48px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd {
+  float: left;
+  margin-left: 10px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd a {
+  font-size: 14px;
+  font-weight: bold; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd a:hover {
+  color: #F60; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise dl dd p {
+  margin-top: 3px;
+  color: #545454;
+  font-size: 12px;
+  margin-bottom: 6px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn {
+  float: left;
+  width: 90px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn p {
+  line-height: 40px;
+  font-weight: 700;
+  height: 35px;
+  font-size: 14px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box .sbsn .con {
+  font-size: 12px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl {
+  width: 210px;
+  float: left; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dt {
+  line-height: 40px;
+  font-weight: 700;
+  height: 35px;
+  font-size: 14px; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dd a {
+  font-size: 12px;
+  color: #545454; }
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box dl dd a:hover {
+  color: #F60; }
+.ng-footer .ng-s-footer {
+  padding-top: 15px; }
+.ng-footer .ng-s-footer .ng-s-f-con p {
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+  height: 25px;
+  line-height: 25px; }
+.ng-footer .ng-s-footer .ng-s-f-con p span {
+  padding: 0 8px;
+  color: #888888; }
+.ng-footer .ng-s-footer .ng-s-f-con .sp-icon {
+  position: relative; }
+.ng-footer .ng-s-footer .ng-s-f-con .sp a {
+  color: #999; }
+.ng-footer .ng-s-footer .ng-s-f-con .sp i {
+  position: absolute;
+  left: 600px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: url(https://res.suning.cn/public/v3/css/images/gwab-icon.png) 0 0 no-repeat; }
+.ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic {
+  width: 358px;
+  margin: 0 auto; }
+.ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic img {
+  float: left;
+  margin-right: 8px; }
+
+.ng-footer .ng-ser-box .ng-ser-box-con .ng-promise::after, .ng-footer .ng-ser-box .ng-ser-box-con .ng-help-box::after, .ng-footer .ng-s-footer .ng-s-f-con .foot-pic-w .foot-pic::after, .main .reg-form .phone-field .input-box::after, .main .reg-form .password-field .input-box::after, .main .reg-form .password-field .security-level::after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.wrapper {
+  width: 990px;
+  margin: 0 auto; }
+
+.index-header .index-header-container .ng-search {
+  position: absolute;
+  height: 100px;
+  width: 600px;
+  top: 0;
+  left: 300px; }
+.index-header .index-header-container .ng-search .g-search {
+  width: 540px;
+  position: relative;
+  margin: 30px 0 0;
+  float: right; }
+.index-header .index-header-container .ng-search .g-search > em {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  font-size: 14px;
+  color: #ccc; }
+.index-header .index-header-container .ng-search .g-search .search-keyword-box {
+  width: 390px;
+  border-radius: 12px 0 0 12px;
+  float: left;
+  padding: 0 0 0 28px;
+  border: 2px solid #ff8000;
+  border-right: none;
+  position: relative; }
+.index-header .index-header-container .ng-search .g-search .search-keyword-box .search-keyword {
+  width: 380px;
+  padding: 9px 10px 9px 0;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 0;
+  border: none;
+  background: #FFF;
+  color: #BBB;
+  font-size: 12px; }
+.index-header .index-header-container .ng-search .g-search .search-btn {
+  font-size: 18px;
+  width: 120px;
+  background: #ff8000;
+  border-radius: 0 12px 12px 0;
+  height: 40px;
+  font-weight: 700;
+  text-indent: 2px;
+  color: #FFF;
+  border: 0;
+  cursor: pointer; }
+.index-header .index-header-container .ng-search .g-search .g-search-hotwords {
+  margin-top: 5px;
+  font-size: 12px; }
+.index-header .index-header-container .ng-search .g-search .g-search-hotwords > a {
+  color: #999999;
+  padding: 0 20px 0 10px;
+  margin: 3px 0 3px -11px;
+  height: 12px;
+  line-height: 12px;
+  border-left: 1px solid #ddd; }
+.index-header .index-header-container .ng-search .g-search .g-search-hotwords > a:hover {
+  color: #FF6600; }
+.index-header .index-header-container .ng-search .g-search .g-ac-results {
+  position: absolute;
+  left: 0;
+  top: 41px;
+  width: 538px;
+  border: 1px solid #E4E4E4;
+  background: #FFF;
+  z-index: 7000;
+  max-height: 188px;
+  overflow: hidden;
+  display: none; }
+.index-header .index-header-container .ng-search .g-search .g-ac-results ul .results-close {
+  position: relative;
+  height: 20px; }
+.index-header .index-header-container .ng-search .g-search .g-ac-results ul .results-close .s-close {
+  position: absolute;
+  right: 10px;
+  cursor: pointer; }
+.index-header .index-header-container .ng-search .g-search .g-ac-results ul li {
+  cursor: pointer; }
+
+.index-header {
+  height: 110px; }
+.index-header .index-header-container {
+  position: relative;
+  height: 100px; }
+.index-header .index-header-container .ng-header-box > a {
+  position: absolute;
+  top: 10px; }
+.index-header .index-header-container .ng-header-box > a img {
+  width: 190px;
+  height: 90px; }
+
+.main {
+  border: 1px solid #ddd;
+  border-top: 3px solid #f90;
+  padding: 50px 0; }
+.main .reg-form {
+  margin: 0 auto;
+  width: 380px; }
+.main .reg-form .phone-field .input-box, .main .reg-form .password-field .input-box {
+  height: 38px;
+  border: 1px solid #ccc; }
+.main .reg-form .phone-field .input-box .title, .main .reg-form .password-field .input-box .title {
+  float: left;
+  font-size: 12px;
+  line-height: 38px;
+  padding-left: 11px;
+  width: 76px; }
+.main .reg-form .phone-field .input-box .phone-box, .main .reg-form .password-field .input-box .phone-box {
+  position: relative;
+  height: 100%;
+  float: left;
+  line-height: 38px; }
+.main .reg-form .phone-field .input-box .phone-box input, .main .reg-form .password-field .input-box .phone-box input {
+  border: 0;
+  width: 291px; }
+.main .reg-form .phone-field .input-box .phone-box .placeholder, .main .reg-form .password-field .input-box .phone-box .placeholder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #cacaca;
+  cursor: text;
+  font-size: 12px; }
+.main .reg-form .phone-field .input-box .phone-box .ok, .main .reg-form .password-field .input-box .phone-box .ok {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  right: 12px;
+  background: url(https://res.suning.cn/project/srsregister/css/image/sprite.png?v=1541754766549) -120px -93px no-repeat; }
+.main .reg-form .phone-field .aliasTip, .main .reg-form .password-field .aliasTip {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999999; }
+.main .reg-form .password-field {
+  margin-top: 50px; }
+.main .reg-form .password-field .security-level {
+  font-size: 12px;
+  margin-top: 10px; }
+.main .reg-form .password-field .security-level span {
+  display: block;
+  float: left; }
+.main .reg-form .password-field .security-level .level {
+  width: 50px;
+  height: 16px;
+  color: #fff;
+  background: #cacaca;
+  text-align: center;
+  margin-right: 2px; }
+.main .reg-form p input {
+  width: 100%;
+  line-height: 40px;
+  background: #f60;
+  font-size: 20px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  margin: 24px 0 5px;
+  border-radius: 2px;
+  text-align: center; }
+
+/*# sourceMappingURL=registry.css.map */

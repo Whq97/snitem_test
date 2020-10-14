@@ -1,0 +1,224 @@
+@charset "utf-8";
+@import "footer";
+%cleafix::after {
+    //被继承的代码不会编码
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.wrapper {
+    width: 990px;
+    margin: 0 auto;
+}
+
+%ng-search-a {
+    // display: inline;
+    position: absolute;
+    height: 100px;
+    width: 600px;
+    top: 0;
+    left: 300px;
+    .g-search {
+        width: 540px;
+        position: relative;
+        margin: 30px 0 0;
+        float: right;
+        >em {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25px;
+            height: 40px;
+            line-height: 40px;
+            text-align: right;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .search-keyword-box {
+            width: 390px;
+            border-radius: 12px 0 0 12px;
+            float: left;
+            padding: 0 0 0 28px;
+            border: 2px solid #ff8000;
+            border-right: none;
+            position: relative;
+            .search-keyword {
+                width: 380px;
+                padding: 9px 10px 9px 0;
+                height: 18px;
+                line-height: 18px;
+                margin-top: 0;
+                border: none;
+                background: #FFF;
+                color: #BBB;
+                font-size: 12px;
+            }
+        }
+        .search-btn {
+            font-size: 18px;
+            width: 120px;
+            background: #ff8000;
+            border-radius: 0 12px 12px 0;
+            height: 40px;
+            font-weight: 700;
+            text-indent: 2px;
+            color: #FFF;
+            border: 0;
+            cursor: pointer;
+        }
+        .g-search-hotwords {
+            margin-top: 5px;
+            font-size: 12px;
+            >a {
+                color: #999999;
+                padding: 0 20px 0 10px;
+                margin: 3px 0 3px -11px;
+                height: 12px;
+                line-height: 12px;
+                border-left: 1px solid #ddd;
+            }
+            >a:hover {
+                color: #FF6600
+            }
+        }
+        .g-ac-results {
+            position: absolute;
+            left: 0;
+            top: 41px;
+            width: 538px;
+            border: 1px solid #E4E4E4;
+            background: #FFF;
+            z-index: 7000;
+            max-height: 188px;
+            overflow: hidden;
+            display: none;
+            ul {
+                .results-close {
+                    position: relative;
+                    height: 20px;
+                    .s-close {
+                        position: absolute;
+                        right: 10px;
+                        cursor: pointer;
+                    }
+                }
+                li {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.index-header {
+    height: 110px;
+    .index-header-container {
+        position: relative;
+        height: 100px;
+        .ng-header-box {
+            >a {
+                position: absolute;
+                top: 10px;
+                img {
+                    width: 190px;
+                    height: 90px;
+                }
+            }
+        }
+        .ng-search {
+            @extend %ng-search-a;
+        }
+    }
+}
+
+.main {
+    border: 1px solid #ddd;
+    border-top: 3px solid #f90;
+    padding: 50px 0;
+    .reg-form {
+        margin: 0 auto;
+        width: 380px;
+        .phone-field {
+            .input-box {
+                @extend %cleafix;
+                height: 38px;
+                border: 1px solid #ccc;
+                .title {
+                    float: left;
+                    font-size: 12px;
+                    line-height: 38px;
+                    padding-left: 11px;
+                    width: 76px;
+                }
+                .phone-box {
+                    position: relative;
+                    height: 100%;
+                    float: left;
+                    line-height: 38px;
+                    input {
+                        border: 0;
+                        width: 291px;
+                    }
+                    .placeholder {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        color: #cacaca;
+                        cursor: text;
+                        font-size: 12px;
+                    }
+                    .ok {
+                        position: absolute;
+                        width: 16px;
+                        height: 16px;
+                        top: 11px;
+                        right: 12px;
+                        background: url(https://res.suning.cn/project/srsregister/css/image/sprite.png?v=1541754766549) -120px -93px no-repeat;
+                    }
+                }
+            }
+            .aliasTip {
+                margin-top: 10px;
+                font-size: 12px;
+                color: #999999;
+            }
+        }
+        .password-field {
+            @extend .phone-field;
+            margin-top: 50px;
+            .security-level {
+                font-size: 12px;
+                @extend %cleafix;
+                margin-top: 10px;
+                span {
+                    display: block;
+                    float: left;
+                }
+                .level {
+                    width: 50px;
+                    height: 16px;
+                    color: #fff;
+                    background: #cacaca;
+                    text-align: center;
+                    margin-right: 2px;
+                }
+            }
+        }
+        p {
+            input {
+                width: 100%;
+                line-height: 40px;
+                background: #f60;
+                font-size: 20px;
+                color: #fff;
+                border: 0;
+                cursor: pointer;
+                margin: 24px 0 5px;
+                border-radius: 2px;
+                text-align: center;
+            }
+        }
+    }
+}
