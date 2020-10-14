@@ -210,32 +210,60 @@ define([], function() {
 
             // $.cookie('cookienum', arrnum, { expires: 10, path: '/' }); //插件完成的cookie的添加。
             function getcookie() {
-                // if ($.cookie('cookiesid') && $.cookie('cookienum')) { //cookie存在
-                arrsid = $.cookie('cookiesid').split(','); //获取cookie的sid，存放到数组中。
-                arrnum = $.cookie('cookienum').split(','); //获取cookie的数量，存放到数组中。
-                // status = $.cookie('cookiesta').split(','); //获取cookie的数量，存放到数组中。
-                // } else { //cookie不存在
-                // arrsid = [];
-                // arrnum = [];
-                // status = [];
-                // }
+                if ($.cookie('cookiesid') && $.cookie('cookienum')) { //cookie存在
+                    arrsid = $.cookie('cookiesid').split(','); //获取cookie的sid，存放到数组中。
+                    arrnum = $.cookie('cookienum').split(','); //获取cookie的数量，存放到数组中。
+                    // status = $.cookie('cookiesta').split(','); //获取cookie的数量，存放到数组中。
+                } else { //cookie不存在
+                    arrsid = [];
+                    arrnum = [];
+                    // status = [];
+                    // }
+                }
             }
 
-            //2.购物车其他功能的控制.
-            //计算总的商品件数和总价。
-            // console.log($('.goods-item').length); //0  渲染出来的，异步的，无法获取
-            function calc() {
-                let allprice = 0; //总价
-                let allcount = 0; //总的数量
-                $('.goods-item').each(function(index, element) {
-                    if ($(this).find('.cart-checkbox input').prop('checked')) { //复选框选中。
-                        allcount += parseInt($(this).find('.quantity-form input').val()); //总的件数
-                        allprice += parseInt($(this).find('.b-sum strong').html()); //总价
+            //删除
+            function delcookie(sid, arrsid) { //sid:当前删除的sid  arrsid:存放sid的数组[3,5,6,7]
+                let $index = -1; //删除的索引位置
+                $.each(arrsid, function(index, value) {
+                    if (sid === value) {
+                        $index = index;
                     }
                 });
-                $('.amount-sum em').html(allcount);
-                $('.totalprice').html(allprice.toFixed(2));
+                arrsid.splice($index, 1);
+                arrnum.splice($index, 1);
+                $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
+                $.cookie('cookiesid', arrsid, { expires: 10, path: '/' });
+                // jscookie.add('cookiesid', arrsid, 10);
+                // jscookie.add('cookienum', arrnum, 10);
             }
+            $('.cart-list ul').on('click', '.td-op a', function() {
+                // console.log($(this).parent(".td-op").parent("li").attr("class"));
+                getcookie();
+                var s_sid = $(this).parent(".td-op").parent("li").attr("class");
+                if (window.confirm('你确定删除吗?')) {
+                    $(this).parents('.cart-list ul li').remove();
+                    delcookie(s_sid, arrsid);
+                    calcprice();
+                }
+            })
+            $('.del a').on('click', function() {
+                // console.log(1);
+                getcookie();
+                // var s_sid = $(this).parent(".td-op").parent("li").attr("class");
+                if (window.confirm('你确定要全部删除吗?')) {
+                    $('.cart-list ul li:visible').each(function() {
+                        if ($(this).find(':checkbox').is(':checked')) { //判断复选框是否选中
+                            $(this).remove();
+                            // console.log($(this).attr("class"));
+                            delcookie($(this).attr("class"), arrsid);
+                            // delcookie($(this).find('img').attr('sid'), arrsid);
+                        }
+                    });
+                    calcprice();
+                    // calcprice(); //计算总价
+                }
+            })
 
         }()
     }
